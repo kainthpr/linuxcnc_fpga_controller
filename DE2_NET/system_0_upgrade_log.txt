@@ -1,0 +1,52 @@
+Info: Upgrading System to Qsys
+Debug: Transform: PipelineBridgeSwap
+Info: pipeline_bridge_swap_transform: After transform: 25 modules, 62 connections
+Debug: Transform: ClockCrossingBridgeSwap
+Debug: Transform: QsysBetaIPSwap
+Debug: Transform: TristateConduitUpgradeTransform
+Info: tristate_conduit_upgrade_transform: After transform: 26 modules, 64 connections
+Debug: Transform: ResetUpgradeTransform
+Info: reset_upgrade_transform: After transform: 26 modules, 141 connections
+Debug: Transform: BorderUpgradeTransform
+Info: border_upgrade_transform: After transform: 27 modules, 141 connections
+Info: Info: *******************************************************************
+Info: Info: Running Quartus II Shell
+Info:     Info: Version 11.0 Build 208 07/03/2011 Service Pack 1 SJ Full Version
+Info:     Info: Copyright (C) 1991-2011 Altera Corporation. All rights reserved.
+Info:     Info: Your use of Altera Corporation's design tools, logic functions 
+Info:     Info: and other software and tools, and its AMPP partner logic 
+Info:     Info: functions, and any output files from any of the foregoing 
+Info:     Info: (including device programming or simulation files), and any 
+Info:     Info: associated documentation or information are expressly subject 
+Info:     Info: to the terms and conditions of the Altera Program License 
+Info:     Info: Subscription Agreement, Altera MegaCore Function License 
+Info:     Info: Agreement, or other applicable license agreement, including, 
+Info:     Info: without limitation, that your use is for the sole purpose of 
+Info:     Info: programming logic devices manufactured by Altera and sold by 
+Info:     Info: Altera or its authorized distributors.  Please refer to the 
+Info:     Info: applicable agreement for further details.
+Info:     Info: Processing started: Thu Aug 11 10:12:54 2011
+Info: Info: Command: quartus_sh -t sopc_qsys_upgrade.tcl
+Info: Info: Default assignment values were changed in the current version of the Quartus II software -- changes to default assignments values are contained in file c:/altera/11.0/quartus/bin/assignment_defaults.qdf
+Info: QSF file E:\TASKs\DE2_porting\DE2_NET\DE2_NET.qsf altered
+Info: File cpu_0.sdc moved to system_0_backup/cpu_0.sdc
+Info: File cpu_0.ocp moved to system_0_backup/cpu_0.ocp
+Info: File sram_0.v moved to system_0_backup/sram_0.v
+Info: File DM9000A.v moved to system_0_backup/DM9000A.v
+Info: File VGA_0.v moved to system_0_backup/VGA_0.v
+Info: File Audio_0.v moved to system_0_backup/Audio_0.v
+Info: File ISP1362.v moved to system_0_backup/ISP1362.v
+Info: File SEG7_Display.v moved to system_0_backup/SEG7_Display.v
+Info: File system_0.bsf moved to system_0_backup/system_0.bsf
+Info: File system_0.html moved to system_0_backup/system_0.html
+Info: File system_0.ptf moved to system_0_backup/system_0.ptf
+Info: File system_0.ptf.6.00 moved to system_0_backup/system_0.ptf.6.00
+Info: File system_0.ptf.7.10 moved to system_0_backup/system_0.ptf.7.10
+Info: File system_0.ptf.8.0 moved to system_0_backup/system_0.ptf.8.0
+Info: File system_0.ptf.bak moved to system_0_backup/system_0.ptf.bak
+Info: File system_0.ptf.pre_generation_ptf moved to system_0_backup/system_0.ptf.pre_generation_ptf
+Info: File system_0.qip moved to system_0_backup/system_0.qip
+Info: File system_0.sopc moved to system_0_backup/system_0.sopc
+Info: File system_0.sopcinfo moved to system_0_backup/system_0.sopcinfo
+Info: File system_0.v moved to system_0_backup/system_0.v
+Info: SOPC to Qsys Upgrade Done

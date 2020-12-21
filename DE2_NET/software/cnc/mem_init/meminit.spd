@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+<file path="hdl_sim/cfi_flash_0.dat" type="DAT" initParamName="INIT_FILE" memoryPath="cfi_flash_0" />
+<file path="hdl_sim/system_0_epcs_controller_boot_rom.dat" type="DAT" initParamName="INIT_FILE" memoryPath="epcs_controller" />
+<file path="hdl_sim/sdram_0.dat" type="DAT" initParamName="INIT_FILE" memoryPath="sdram_0" />
+<file path="hdl_sim/system_0_epcs_controller_boot_rom.hex" type="HEX" initParamName="INIT_FILE" memoryPath="epcs_controller" />
+</simPackage>

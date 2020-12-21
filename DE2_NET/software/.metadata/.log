@@ -1,0 +1,772 @@
+!SESSION 2011-08-11 10:21:38.140 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-08-11 10:22:38.562
+!MESSAGE Indexed 'hello_world_bsp' (95 sources, 75 headers) in 1.75 sec: 1,665 declarations; 5,570 references; 141 unresolved inclusions; 5 syntax errors; 280 unresolved names (3.73%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2011-08-11 10:22:44.140
+!MESSAGE Indexed 'hello_world' (0 sources, 13 headers) in 0.00 sec: 0 declarations; 0 references; 13 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2011-08-11 10:38:01.250
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1b02108 --id=0x0 --timestamp=1313029074]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2011-08-11 10:38:04.781
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1b02108 --id=0x0 --timestamp=1313029074 /cygdrive/e/TASKs/DE2_porting/DE2_NET/software/hello_world/hello_world.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2011-08-11 10:39:02.265
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2011-08-11 10:39:04.859
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1b02108 --id=0x0 --timestamp=1313029074]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2011-08-11 10:39:08.187
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1b02108 --id=0x0 --timestamp=1313029074 /cygdrive/e/TASKs/DE2_porting/DE2_NET/software/hello_world/hello_world.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2011-08-11 10:39:55.812
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2011-08-11 10:39:58.421
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1b02108 --id=0x0 --timestamp=1313029074]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2011-08-11 10:40:01.828
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1b02108 --id=0x0 --timestamp=1313029074 /cygdrive/e/TASKs/DE2_porting/DE2_NET/software/hello_world/hello_world.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2011-08-11 10:40:36.140
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2011-08-11 10:40:38.812
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1b02108 --id=0x0 --timestamp=1313029074]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2011-08-11 10:40:42.218
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1b02108 --id=0x0 --timestamp=1313029074 /cygdrive/e/TASKs/DE2_porting/DE2_NET/software/hello_world/hello_world.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2011-08-11 10:48:51.078
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1b02108 --id=0x0 --timestamp=1313029074]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2011-08-11 10:48:54.593
+!MESSAGE Executing: [C:\WINDOWS\system32\cmd.exe, /C, C:/altera/11.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1b02108 --id=0x0 --timestamp=1313029074 /cygdrive/e/TASKs/DE2_porting/DE2_NET/software/hello_world/hello_world.elf]
+!SESSION 2012-01-30 14:59:51.515 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.epp.usagedata.recording 1 0 2012-01-30 15:00:28.171
+!MESSAGE Usage data uploaded to http://udc.eclipse.org/upload.php in 2078 milliseconds.
+!SESSION 2012-01-31 09:09:08.421 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.osgi 4 0 2012-01-31 09:10:05.812
+!MESSAGE An error occurred while automatically activating bundle com.altera.sbtgui.launch (271).
+!STACK 0
+org.osgi.framework.BundleException: Exception in com.altera.sbtgui.launch.Activator.start() of bundle com.altera.sbtgui.launch.
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:806)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:755)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:370)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:284)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:417)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:265)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:106)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:453)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:338)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:232)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1197)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:904)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:267)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:52)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:263)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.getExecutableExtension(EarlyStartupRunnable.java:117)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$59.run(Workbench.java:2409)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.util.concurrent.RejectedExecutionException
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.reject(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:412)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:352)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:347)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.shutdownSystemConsole(SystemConsoleModel.java:201)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.initSystemConsole(SystemConsoleModel.java:114)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.setSystemConsole(SystemConsoleModel.java:813)
+	at com.altera.sbtgui.launch.Activator.start(Activator.java:94)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:783)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:774)
+	... 29 more
+Root exception:
+java.util.concurrent.RejectedExecutionException
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.reject(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:412)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:352)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:347)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.shutdownSystemConsole(SystemConsoleModel.java:201)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.initSystemConsole(SystemConsoleModel.java:114)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.setSystemConsole(SystemConsoleModel.java:813)
+	at com.altera.sbtgui.launch.Activator.start(Activator.java:94)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:783)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:774)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:755)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:370)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:284)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:417)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:265)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:106)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:453)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:338)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:232)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1197)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:904)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:267)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:52)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:263)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.getExecutableExtension(EarlyStartupRunnable.java:117)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$59.run(Workbench.java:2409)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.ui.workbench 4 2 2012-01-31 09:10:05.859
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in com.altera.sbtgui.launch was unable to load class com.altera.sbtgui.launch.Startup.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:194)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:176)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:904)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:267)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:52)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:263)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.getExecutableExtension(EarlyStartupRunnable.java:117)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$59.run(Workbench.java:2409)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter$TerminatingClassNotFoundException: An error occurred while automatically activating bundle com.altera.sbtgui.launch (271).
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:121)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:453)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:338)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:232)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1197)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	... 11 more
+Caused by: org.osgi.framework.BundleException: Exception in com.altera.sbtgui.launch.Activator.start() of bundle com.altera.sbtgui.launch.
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:806)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:755)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:370)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:284)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:417)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:265)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:106)
+	... 23 more
+Caused by: java.util.concurrent.RejectedExecutionException
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.reject(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:412)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:352)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:347)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.shutdownSystemConsole(SystemConsoleModel.java:201)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.initSystemConsole(SystemConsoleModel.java:114)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.setSystemConsole(SystemConsoleModel.java:813)
+	at com.altera.sbtgui.launch.Activator.start(Activator.java:94)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:783)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:774)
+	... 29 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2012-01-31 09:10:05.859
+!MESSAGE Plug-in com.altera.sbtgui.launch was unable to load class com.altera.sbtgui.launch.Startup.
+!STACK 0
+org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter$TerminatingClassNotFoundException: An error occurred while automatically activating bundle com.altera.sbtgui.launch (271).
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:121)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:453)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:338)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:232)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1197)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:904)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:267)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:52)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:263)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.getExecutableExtension(EarlyStartupRunnable.java:117)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$59.run(Workbench.java:2409)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.osgi.framework.BundleException: Exception in com.altera.sbtgui.launch.Activator.start() of bundle com.altera.sbtgui.launch.
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:806)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:755)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:370)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:284)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:417)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:265)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:106)
+	... 23 more
+Caused by: java.util.concurrent.RejectedExecutionException
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.reject(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:412)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:352)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:347)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.shutdownSystemConsole(SystemConsoleModel.java:201)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.initSystemConsole(SystemConsoleModel.java:114)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.setSystemConsole(SystemConsoleModel.java:813)
+	at com.altera.sbtgui.launch.Activator.start(Activator.java:94)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:783)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:774)
+	... 29 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2012-01-31 09:10:05.859
+!MESSAGE Plug-in com.altera.sbtgui.launch was unable to load class com.altera.sbtgui.launch.Startup.
+!STACK 0
+org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter$TerminatingClassNotFoundException: An error occurred while automatically activating bundle com.altera.sbtgui.launch (271).
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:121)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:453)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:338)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:232)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1197)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:904)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:267)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:52)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:263)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.getExecutableExtension(EarlyStartupRunnable.java:117)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$59.run(Workbench.java:2409)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.osgi.framework.BundleException: Exception in com.altera.sbtgui.launch.Activator.start() of bundle com.altera.sbtgui.launch.
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:806)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:755)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:370)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:284)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:417)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:265)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:106)
+	... 23 more
+Caused by: java.util.concurrent.RejectedExecutionException
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.reject(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:412)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:352)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:347)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.shutdownSystemConsole(SystemConsoleModel.java:201)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.initSystemConsole(SystemConsoleModel.java:114)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.setSystemConsole(SystemConsoleModel.java:813)
+	at com.altera.sbtgui.launch.Activator.start(Activator.java:94)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:783)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:774)
+	... 29 more
+
+!ENTRY org.eclipse.ui 4 4 2012-01-31 09:10:05.906
+!MESSAGE Unhandled Exception
+
+!ENTRY com.altera.sbtgui.launch 4 0 2012-01-31 09:10:05.906
+!MESSAGE Unable to execute early startup code for an extension
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in com.altera.sbtgui.launch was unable to load class com.altera.sbtgui.launch.Startup.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:194)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:176)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:904)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:267)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:52)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:263)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.getExecutableExtension(EarlyStartupRunnable.java:117)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$59.run(Workbench.java:2409)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter$TerminatingClassNotFoundException: An error occurred while automatically activating bundle com.altera.sbtgui.launch (271).
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:121)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:453)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:338)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:232)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1197)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	... 11 more
+Caused by: org.osgi.framework.BundleException: Exception in com.altera.sbtgui.launch.Activator.start() of bundle com.altera.sbtgui.launch.
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:806)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:755)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:370)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:284)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:417)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:265)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:106)
+	... 23 more
+Caused by: java.util.concurrent.RejectedExecutionException
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.reject(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:412)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:352)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:347)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.shutdownSystemConsole(SystemConsoleModel.java:201)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.initSystemConsole(SystemConsoleModel.java:114)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.setSystemConsole(SystemConsoleModel.java:813)
+	at com.altera.sbtgui.launch.Activator.start(Activator.java:94)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:783)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:774)
+	... 29 more
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2012-01-31 09:10:05.906
+!MESSAGE Plug-in com.altera.sbtgui.launch was unable to load class com.altera.sbtgui.launch.Startup.
+!STACK 0
+org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter$TerminatingClassNotFoundException: An error occurred while automatically activating bundle com.altera.sbtgui.launch (271).
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:121)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:453)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:338)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:232)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1197)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:904)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:267)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:52)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:263)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.getExecutableExtension(EarlyStartupRunnable.java:117)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$59.run(Workbench.java:2409)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.osgi.framework.BundleException: Exception in com.altera.sbtgui.launch.Activator.start() of bundle com.altera.sbtgui.launch.
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:806)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:755)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:370)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:284)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:417)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:265)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:106)
+	... 23 more
+Caused by: java.util.concurrent.RejectedExecutionException
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.reject(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:412)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:352)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:347)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.shutdownSystemConsole(SystemConsoleModel.java:201)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.initSystemConsole(SystemConsoleModel.java:114)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.setSystemConsole(SystemConsoleModel.java:813)
+	at com.altera.sbtgui.launch.Activator.start(Activator.java:94)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:783)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:774)
+	... 29 more
+
+!ENTRY org.eclipse.debug.ui 4 0 2012-01-31 09:10:41.578
+!MESSAGE Launch shortcut 'com.altera.sbtgui.launch.iss.Nios2IssLaunchShortcut' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property com.altera.sbtgui.launch.isNios2Project to type class org.eclipse.core.internal.resources.Project
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:123)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:96)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:21)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:150)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:72)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AndExpression.evaluate(AndExpression.java:29)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:53)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:287)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableConfigurationTypes(LaunchConfigurationManager.java:744)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableLaunchConfigurations(LaunchConfigurationManager.java:780)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getParticipatingLaunchConfigurations(LaunchingResourceManager.java:506)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:129)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:82)
+	at org.eclipse.debug.internal.ui.actions.RelaunchLastAction.run(RelaunchLastAction.java:77)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:251)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:229)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1383)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2012-01-31 09:10:41.578
+!MESSAGE No property tester contributes a property com.altera.sbtgui.launch.isNios2Project to type class org.eclipse.core.internal.resources.Project
+
+!ENTRY org.eclipse.debug.ui 4 0 2012-01-31 09:10:41.578
+!MESSAGE Launch shortcut 'com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property com.altera.sbtgui.launch.isNios2Project to type class org.eclipse.core.internal.resources.Project
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:123)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:96)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:21)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:150)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:72)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AndExpression.evaluate(AndExpression.java:29)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:53)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:287)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableConfigurationTypes(LaunchConfigurationManager.java:744)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableLaunchConfigurations(LaunchConfigurationManager.java:780)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getParticipatingLaunchConfigurations(LaunchingResourceManager.java:506)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:129)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:82)
+	at org.eclipse.debug.internal.ui.actions.RelaunchLastAction.run(RelaunchLastAction.java:77)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:251)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:229)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1383)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2012-01-31 09:10:41.578
+!MESSAGE No property tester contributes a property com.altera.sbtgui.launch.isNios2Project to type class org.eclipse.core.internal.resources.Project
+
+!ENTRY org.eclipse.debug.ui 4 0 2012-01-31 09:10:41.578
+!MESSAGE Launch shortcut 'com.altera.sbtgui.launch.modelsim.Nios2ModelsimLaunchShortcut' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property com.altera.sbtgui.launch.isNios2Project to type class org.eclipse.core.internal.resources.Project
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:123)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:96)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:21)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:150)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:72)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AndExpression.evaluate(AndExpression.java:29)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:53)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:287)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableConfigurationTypes(LaunchConfigurationManager.java:744)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableLaunchConfigurations(LaunchConfigurationManager.java:780)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getParticipatingLaunchConfigurations(LaunchingResourceManager.java:506)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:129)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:82)
+	at org.eclipse.debug.internal.ui.actions.RelaunchLastAction.run(RelaunchLastAction.java:77)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:251)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:229)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1383)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2012-01-31 09:10:41.578
+!MESSAGE No property tester contributes a property com.altera.sbtgui.launch.isNios2Project to type class org.eclipse.core.internal.resources.Project
+
+!ENTRY org.eclipse.cdt.launch 4 150 2012-01-31 09:10:58.515
+!MESSAGE Error starting process.
+!STACK 0
+java.io.IOException: Cannot run program "D:\SVN\de2\test\Qsys_Q11_1\DE2_NET\software\hello_world\hello_world.elf": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:297)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:88)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:89)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.exec(LocalCDILaunchDelegate.java:381)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:96)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:70)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:702)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:923)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1126)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.launch 4 150 2012-01-31 09:10:58.515
+!MESSAGE Cannot run program "D:\SVN\de2\test\Qsys_Q11_1\DE2_NET\software\hello_world\hello_world.elf": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "D:\SVN\de2\test\Qsys_Q11_1\DE2_NET\software\hello_world\hello_world.elf": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:297)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:88)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:89)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.exec(LocalCDILaunchDelegate.java:381)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:96)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:70)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:702)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:923)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1126)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.equinox.registry 4 1 2012-01-31 09:11:31.609
+!MESSAGE Plug-in com.altera.sbtgui.launch was unable to load class com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.
+!STACK 0
+org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter$TerminatingClassNotFoundException: An error occurred while automatically activating bundle com.altera.sbtgui.launch (271).
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:121)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:453)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:338)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:232)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1197)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:904)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:267)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:52)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:263)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.getExecutableExtension(EarlyStartupRunnable.java:117)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$59.run(Workbench.java:2409)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.osgi.framework.BundleException: Exception in com.altera.sbtgui.launch.Activator.start() of bundle com.altera.sbtgui.launch.
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:806)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:755)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:370)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:284)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:417)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:265)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:106)
+	... 23 more
+Caused by: java.util.concurrent.RejectedExecutionException
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.reject(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:412)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:352)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:347)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.shutdownSystemConsole(SystemConsoleModel.java:201)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.initSystemConsole(SystemConsoleModel.java:114)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.setSystemConsole(SystemConsoleModel.java:813)
+	at com.altera.sbtgui.launch.Activator.start(Activator.java:94)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:783)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:774)
+	... 29 more
+
+!ENTRY org.eclipse.equinox.registry 4 1 2012-01-31 09:19:13.546
+!MESSAGE Plug-in com.altera.sbtgui.launch was unable to load class com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.
+!STACK 0
+org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter$TerminatingClassNotFoundException: An error occurred while automatically activating bundle com.altera.sbtgui.launch (271).
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:121)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:453)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:393)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:469)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:338)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:232)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1197)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:904)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:267)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:52)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:263)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.getExecutableExtension(EarlyStartupRunnable.java:117)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$59.run(Workbench.java:2409)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.osgi.framework.BundleException: Exception in com.altera.sbtgui.launch.Activator.start() of bundle com.altera.sbtgui.launch.
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:806)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:755)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:370)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:284)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:417)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:265)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:106)
+	... 23 more
+Caused by: java.util.concurrent.RejectedExecutionException
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.reject(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:412)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:352)
+	at com.altera.systemconsole.internal.core.SystemExecutor.waitForCurrentTasksToComplete(SystemExecutor.java:347)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.shutdownSystemConsole(SystemConsoleModel.java:201)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.initSystemConsole(SystemConsoleModel.java:114)
+	at com.altera.embeddedsw.flash.model.internal.utils.SystemConsoleModel.setSystemConsole(SystemConsoleModel.java:813)
+	at com.altera.sbtgui.launch.Activator.start(Activator.java:94)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:783)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:774)
+	... 29 more
+
+!ENTRY org.eclipse.cdt.launch 4 150 2012-01-31 09:19:27.609
+!MESSAGE Error starting process.
+!STACK 0
+java.io.IOException: Cannot run program "D:\SVN\de2\test\Qsys_Q11_1\DE2_NET\software\hello_world\hello_world.elf": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:297)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:88)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:89)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.exec(LocalCDILaunchDelegate.java:381)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:96)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:70)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:702)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:923)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1126)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.launch 4 150 2012-01-31 09:19:27.609
+!MESSAGE Cannot run program "D:\SVN\de2\test\Qsys_Q11_1\DE2_NET\software\hello_world\hello_world.elf": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "D:\SVN\de2\test\Qsys_Q11_1\DE2_NET\software\hello_world\hello_world.elf": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:297)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:88)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:89)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.exec(LocalCDILaunchDelegate.java:381)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:96)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:70)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:702)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:923)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1126)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)

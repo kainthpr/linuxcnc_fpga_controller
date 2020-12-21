@@ -1,0 +1,45 @@
+component de2;
+
+param rw float sg0_scale = 4064.0;
+param rw float sg1_scale = 4064.0;
+param rw float sg2_scale = 4064.0;
+param rw float sg3_scale = 4064.0;
+param rw float sg4_scale = 4064.0;
+
+param rw float pwm_freq = 1000;
+
+pin out float sg0_position_fb;
+pin in  float sg0_velocity_cmd;
+pin in  bit   sg0_enable;
+
+pin out float sg1_position_fb;
+pin in  float sg1_velocity_cmd;
+pin in  bit   sg1_enable;
+
+pin out float sg2_position_fb;
+pin in  float sg2_velocity_cmd;
+pin in  bit   sg2_enable;
+
+pin out float sg3_position_fb;
+pin in  float sg3_velocity_cmd;
+pin in  bit   sg3_enable;
+
+pin out float sg4_position_fb;
+pin in  float sg4_velocity_cmd;
+pin in  bit   sg4_enable;
+
+pin in  float spindle_rpm;
+
+pin in  bit gpio_out-#  [32];
+pin out bit gpio_in-# [32];
+
+function do_work;
+option singleton;
+
+license "GPL"; 
+;;
+float pos;
+int error_count;
+FUNCTION(do_work){ 
+	
+}

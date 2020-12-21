@@ -1,0 +1,5 @@
+1. first do halcompile --preprocess de2.comp. THis will generate a de2.c file with basic pins and params defined.
+2. Modify this de2.c file to add all the code and RTAPI_MP_CHAR initilization time paramters
+3. install this component using sudo halcompile --install de2.c
+
+

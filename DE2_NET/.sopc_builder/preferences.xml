@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="Default">
+  <columns>
+   <opcodeName visible="0" />
+   <connections preferredWidth="30" />
+   <irq preferredWidth="34" />
+   <export visible="0" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="374" />
+   <clocksource preferredWidth="375" />
+   <frequency preferredWidth="356" />
+  </columns>
+ </clocktable>
+ <window width="1600" height="870" x="0" y="0" />
+ <library
+   expandedCategories="Project/Terasic Technologies Inc.,Project,Project/Terasic Technologies Inc,Library" />
+</preferences>

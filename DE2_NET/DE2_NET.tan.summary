@@ -1,0 +1,146 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 10.741 ns
+From           : SRAM_DQ[3]
+To             : system_0:u0|cpu_0:the_cpu_0|d_readdata_d1[19]
+From Clock     : --
+To Clock       : CLOCK_50
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 13.020 ns
+From           : system_0:u0|cpu_0:the_cpu_0|d_address[18]
+To             : LCD_EN
+From Clock     : CLOCK_50
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 2.612 ns
+From           : altera_internal_jtag~TDO
+To             : altera_reserved_tdo
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 1.187 ns
+From           : altera_internal_jtag
+To             : sld_hub:sld_hub_inst|sld_dffex:IRSR|Q[6]
+From Clock     : --
+To Clock       : altera_internal_jtag~TCKUTAP
+Failed Paths   : 0
+
+Type           : Clock Setup: 'SDRAM_PLL:PLL1|altpll:altpll_component|_clk1'
+Slack          : 0.753 ns
+Required Time  : 100.00 MHz ( period = 10.000 ns )
+Actual Time    : 108.14 MHz ( period = 9.247 ns )
+From           : system_0:u0|cpu_0:the_cpu_0|d_address[18]
+To             : system_0:u0|cpu_0:the_cpu_0|d_readdata_d1[15]
+From Clock     : SDRAM_PLL:PLL1|altpll:altpll_component|_clk1
+To Clock       : SDRAM_PLL:PLL1|altpll:altpll_component|_clk1
+Failed Paths   : 0
+
+Type           : Clock Setup: 'SDRAM_PLL:PLL1|altpll:altpll_component|_clk2'
+Slack          : 2.221 ns
+Required Time  : 25.00 MHz ( period = 40.000 ns )
+Actual Time    : N/A
+From           : system_0:u0|VGA_0:the_VGA_0|VGA_NIOS_CTRL:the_VGA_NIOS_CTRL|mCursor_X[2]
+To             : system_0:u0|VGA_0:the_VGA_0|VGA_NIOS_CTRL:the_VGA_NIOS_CTRL|VGA_Controller:u0|Cur_Color_R[6]
+From Clock     : SDRAM_PLL:PLL1|altpll:altpll_component|_clk1
+To Clock       : SDRAM_PLL:PLL1|altpll:altpll_component|_clk2
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CLOCK_50'
+Slack          : 8.669 ns
+Required Time  : 50.00 MHz ( period = 20.000 ns )
+Actual Time    : 88.25 MHz ( period = 11.331 ns )
+From           : system_0:u0|sdram_0:the_sdram_0|sdram_0_input_efifo_module:the_sdram_0_input_efifo_module|rd_address
+To             : system_0:u0|sdram_0:the_sdram_0|m_addr[0]
+From Clock     : CLOCK_50
+To Clock       : CLOCK_50
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Audio_PLL:PLL2|altpll:altpll_component|_clk0'
+Slack          : 48.153 ns
+Required Time  : 18.41 MHz ( period = 54.320 ns )
+Actual Time    : 162.15 MHz ( period = 6.167 ns )
+From           : system_0:u0|Audio_0:the_Audio_0|AUDIO_DAC_FIFO:the_AUDIO_DAC_FIFO|FIFO_16_256:u0|dcfifo:dcfifo_component|dcfifo_9ai1:auto_generated|alt_synch_pipe_nc8:rs_dgwp|dffpipe_hd9:dffpipe5|dffe7a[4]
+To             : system_0:u0|Audio_0:the_Audio_0|AUDIO_DAC_FIFO:the_AUDIO_DAC_FIFO|FIFO_16_256:u0|dcfifo:dcfifo_component|dcfifo_9ai1:auto_generated|a_graycounter_g86:rdptr_g1p|counter_ffa[8]
+From Clock     : Audio_PLL:PLL2|altpll:altpll_component|_clk0
+To Clock       : Audio_PLL:PLL2|altpll:altpll_component|_clk0
+Failed Paths   : 0
+
+Type           : Clock Setup: 'altera_internal_jtag~TCKUTAP'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 125.68 MHz ( period = 7.957 ns )
+From           : sld_hub:sld_hub_inst|jtag_debug_mode_usr1
+To             : system_0:u0|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module:the_cpu_0_jtag_debug_module1|sr[14]
+From Clock     : altera_internal_jtag~TCKUTAP
+To Clock       : altera_internal_jtag~TCKUTAP
+Failed Paths   : 0
+
+Type           : Clock Hold: 'SDRAM_PLL:PLL1|altpll:altpll_component|_clk1'
+Slack          : 0.391 ns
+Required Time  : 100.00 MHz ( period = 10.000 ns )
+Actual Time    : N/A
+From           : system_0:u0|SD_CLK:the_SD_CLK|data_out
+To             : system_0:u0|SD_CLK:the_SD_CLK|data_out
+From Clock     : SDRAM_PLL:PLL1|altpll:altpll_component|_clk1
+To Clock       : SDRAM_PLL:PLL1|altpll:altpll_component|_clk1
+Failed Paths   : 0
+
+Type           : Clock Hold: 'SDRAM_PLL:PLL1|altpll:altpll_component|_clk2'
+Slack          : 0.391 ns
+Required Time  : 25.00 MHz ( period = 40.000 ns )
+Actual Time    : N/A
+From           : system_0:u0|VGA_0:the_VGA_0|VGA_NIOS_CTRL:the_VGA_NIOS_CTRL|VGA_Controller:u0|oVGA_V_SYNC
+To             : system_0:u0|VGA_0:the_VGA_0|VGA_NIOS_CTRL:the_VGA_NIOS_CTRL|VGA_Controller:u0|oVGA_V_SYNC
+From Clock     : SDRAM_PLL:PLL1|altpll:altpll_component|_clk2
+To Clock       : SDRAM_PLL:PLL1|altpll:altpll_component|_clk2
+Failed Paths   : 0
+
+Type           : Clock Hold: 'Audio_PLL:PLL2|altpll:altpll_component|_clk0'
+Slack          : 0.391 ns
+Required Time  : 18.41 MHz ( period = 54.320 ns )
+Actual Time    : N/A
+From           : system_0:u0|Audio_0:the_Audio_0|AUDIO_DAC_FIFO:the_AUDIO_DAC_FIFO|LRCK_1X
+To             : system_0:u0|Audio_0:the_Audio_0|AUDIO_DAC_FIFO:the_AUDIO_DAC_FIFO|LRCK_1X
+From Clock     : Audio_PLL:PLL2|altpll:altpll_component|_clk0
+To Clock       : Audio_PLL:PLL2|altpll:altpll_component|_clk0
+Failed Paths   : 0
+
+Type           : Clock Hold: 'CLOCK_50'
+Slack          : 0.391 ns
+Required Time  : 50.00 MHz ( period = 20.000 ns )
+Actual Time    : N/A
+From           : system_0:u0|sdram_0:the_sdram_0|i_cmd[3]
+To             : system_0:u0|sdram_0:the_sdram_0|i_cmd[3]
+From Clock     : CLOCK_50
+To Clock       : CLOCK_50
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+
