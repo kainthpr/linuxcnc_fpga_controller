@@ -12,7 +12,9 @@ loadrt lut5
 loadrt not count=1
 loadrt scale count=1
 loadrt invert count=1
+loadrt charge_pump
 
+addf charge-pump              servo-thread
 addf invert.0                 servo-thread
 addf scale.0                  servo-thread
 addf timedelta.0              servo-thread
@@ -31,19 +33,19 @@ addf de2.do-work              servo-thread
 net spindle-cw    => de2.gpio-out-0
 net coolant-mist  => de2.gpio-out-1
 net coolant-flood => de2.gpio-out-2
-net spindle-brake => de2.gpio-out-3
+net cp charge-pump.out => de2.gpio-out-3
 
 # external input signals
-net all-limit-gpio <= de2.gpio-in-1
+#net all-limit-gpio <= de2.gpio-in-1
 net probe-in       <=  de2.gpio-in-2
-net estop-ext      <=  de2.gpio-in-3
-
-net all-limit-gpio => not.0.in
-net all-limit-home    <=  not.0.out
+net estop-gpio      <=  de2.gpio-in-3
+net estop-gpio => not.0.in
+net estop-ext  <=  not.0.out
+net all-limit-home <= de2.gpio-in-1
 
 setp lut5.0.function 0x10000
 net all-limit-home => lut5.0.in-4
-#net all-limit <= lut5.0.out
+net all-limit <= lut5.0.out
 
 net homing-x <= joint.0.homing => lut5.0.in-0
 net homing-y <= joint.1.homing => lut5.0.in-1
