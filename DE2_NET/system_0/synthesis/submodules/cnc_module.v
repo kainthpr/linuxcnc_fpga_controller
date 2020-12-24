@@ -2,6 +2,7 @@ module cnc_module (
     osteps, 
     odirs,
     ospindle_pwm,
+    cp,
     ogpio,
     igpio,
     clk,
@@ -23,6 +24,7 @@ input	[5:0]	address;          // avalon address
 output	[4:0]	osteps;           // 5 axis step outputs
 output	[4:0]	odirs;            // 5 axis dir outputs
 output  ospindle_pwm;             // spindle pwm
+output  cp;                       // charge pump
 output reg		[31:0]	ogpio;            // 32 general purpose outputs
 input   [31:0]	igpio;            // 32 general purpose inputs
 
@@ -201,5 +203,13 @@ pwm_gen pwm1
     .pwm_out(ospindle_pwm) 
 );
 
+pwm_gen cp1
+(
+    .clk50(clk),
+    .reset_n(reset_n),
+    .pwm_counter(32'd5000),
+    .pwm_capture(32'd2500),
+    .pwm_out(cp) 
+);
 
 endmodule

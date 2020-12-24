@@ -320,6 +320,7 @@ wire [31:0] igpio;
 wire [4:0]  sg_steps;
 wire [4:0]  sg_dirs;
 wire spindle_pwm;
+wire cp;
 
 assign	GPIO_1[35] = sg_dirs[0];
 assign	GPIO_1[34] = ~sg_dirs[0];
@@ -336,13 +337,14 @@ assign	GPIO_1[27] = ~sg_dirs[2];
 assign	GPIO_1[24] = sg_steps[2];
 assign	GPIO_1[25] = ~sg_steps[2];
 
-assign	GPIO_1[22] = spindle_pwm;  // Spindle 0 PWM
+assign	GPIO_1[22] = ~spindle_pwm;  // Spindle 0 PWM
 assign	GPIO_1[23] = ogpio[0];     // Spindle 1 CW
 assign  igpio[0] = GPIO_1[20];     // Spindle 2 index
 
 assign	GPIO_1[18] = ogpio[1];  // 1
 assign	GPIO_1[21] = ogpio[2];  // 2
-assign	GPIO_1[19] = ogpio[3];  // 3
+assign	GPIO_1[19] = cp;  
+								// gpio 3 not assigned to anything yet
 
 assign igpio[1] = GPIO_1[17];  // 4
 assign igpio[2] = GPIO_1[16];  // 5
@@ -503,6 +505,7 @@ system_0 	u0	(
 
 				// cnc hardware
 				.cnc_module_ospindle_pwm              (spindle_pwm),              //                      cnc_module.ospindle_pwm
+				.cnc_module_cp              		  (cp),              //                      cnc_module.ospindle_pwm
 				.cnc_module_odirs                     (sg_dirs),                     //                                .odirs
 				.cnc_module_ogpio                     (ogpio),                     //                                .ogpio
 				.cnc_module_igpio                     (igpio),                     //                                .igpio

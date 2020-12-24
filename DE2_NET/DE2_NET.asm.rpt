@@ -1,5 +1,5 @@
 Assembler report for DE2_NET
-Fri Oct 23 20:20:45 2020
+Wed Dec 23 21:05:51 2020
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -39,7 +39,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri Oct 23 20:20:45 2020 ;
+; Assembler Status      ; Successful - Wed Dec 23 21:05:51 2020 ;
 ; Revision Name         ; DE2_NET                               ;
 ; Top-level Entity Name ; DE2_NET                               ;
 ; Family                ; Cyclone II                            ;
@@ -107,7 +107,7 @@ applicable agreement for further details.
 +----------------+------------------------------------------+
 ; Device         ; EP2C35F672C6                             ;
 ; JTAG usercode  ; 0xFFFFFFFF                               ;
-; Checksum       ; 0x009B59AA                               ;
+; Checksum       ; 0x009B8478                               ;
 +----------------+------------------------------------------+
 
 
@@ -118,7 +118,7 @@ applicable agreement for further details.
 +--------------------+--------------------------------------+
 ; Device             ; EPCS16                               ;
 ; JTAG usercode      ; 0x00000000                           ;
-; Checksum           ; 0x1BBACCE0                           ;
+; Checksum           ; 0x1BBD6F55                           ;
 ; Compression Ratio  ; 2                                    ;
 +--------------------+--------------------------------------+
 
@@ -129,13 +129,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Oct 23 20:20:42 2020
+    Info: Processing started: Wed Dec 23 21:05:48 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off DE2_NET -c DE2_NET
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4593 megabytes
-    Info: Processing ended: Fri Oct 23 20:20:45 2020
+    Info: Peak virtual memory: 4597 megabytes
+    Info: Processing ended: Wed Dec 23 21:05:51 2020
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 

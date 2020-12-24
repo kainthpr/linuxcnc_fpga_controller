@@ -36,7 +36,7 @@ void LCD_Line2()
 //-------------------------------------------------------------------------
 void LCD_Test()
 {
-  char Text1[16] = "Altera DE2 Board";
+  char Text1[16] = "CNC v2          ";
   char Text2[16] = "Ethernet Testing";
   //  Initial LCD
   LCD_Init();

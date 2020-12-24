@@ -79,6 +79,7 @@
 			cnc_module_odirs                     : out   std_logic_vector(4 downto 0);                     -- odirs
 			cnc_module_ogpio                     : out   std_logic_vector(31 downto 0);                    -- ogpio
 			cnc_module_igpio                     : in    std_logic_vector(31 downto 0) := (others => 'X'); -- igpio
+			cnc_module_cp                        : out   std_logic;                                        -- cp
 			cnc_module_osteps                    : out   std_logic_vector(4 downto 0)                      -- osteps
 		);
 	end component system_0;

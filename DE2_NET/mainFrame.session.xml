@@ -7,13 +7,13 @@
     <void property="columnWidths"> 
      <array class="int" length="3"> 
       <void index="0"> 
-       <int>471</int> 
+       <int>403</int> 
       </void> 
       <void index="1"> 
-       <int>147</int> 
+       <int>78</int> 
       </void> 
       <void index="2"> 
-       <int>146</int> 
+       <int>77</int> 
       </void> 
      </array> 
     </void> 
@@ -25,13 +25,13 @@
     <void property="columnWidths"> 
      <array class="int" length="3"> 
       <void index="0"> 
-       <int>471</int> 
+       <int>403</int> 
       </void> 
       <void index="1"> 
-       <int>147</int> 
+       <int>78</int> 
       </void> 
       <void index="2"> 
-       <int>146</int> 
+       <int>77</int> 
       </void> 
      </array> 
     </void> 
@@ -53,9 +53,9 @@
    <object class="org.jdesktop.application.SessionStorage$WindowState"> 
     <void property="bounds"> 
      <object class="java.awt.Rectangle"> 
-      <int>224</int> 
-      <int>-7</int> 
-      <int>913</int> 
+      <int>-4</int> 
+      <int>8</int> 
+      <int>707</int> 
       <int>743</int> 
      </object> 
     </void> 
@@ -68,7 +68,7 @@
      </object> 
     </void> 
     <void property="screenCount"> 
-     <int>2</int> 
+     <int>1</int> 
     </void> 
    </object> 
   </void> 

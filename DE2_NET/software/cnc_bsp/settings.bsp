@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>27-Sep-2020 11:00:28 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1601262028640</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>23-Dec-2020 8:43:54 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1608774234802</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\projects\DE2_NET\software\cnc_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\projects\DE2_NET\system_0.sopcinfo</SopcDesignFile>
