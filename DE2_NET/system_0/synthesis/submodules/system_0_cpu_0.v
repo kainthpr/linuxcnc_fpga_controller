@@ -1,4 +1,4 @@
-//Legal Notice: (C)2020 Altera Corporation. All rights reserved.  Your
+//Legal Notice: (C)2021 Altera Corporation. All rights reserved.  Your
 //use of Altera Corporation's design tools, logic functions and other
 //software and tools, and its AMPP partner logic functions, and any
 //output files any of the foregoing (including device programming or
@@ -505,7 +505,7 @@ defparam system_0_cpu_0_ociram_sp_ram.lpm_file = "system_0_cpu_0_ociram_default_
     (MonAReg[4 : 2] == 3'd2)? 32'h00040000 :
     (MonAReg[4 : 2] == 3'd3)? 32'h00000000 :
     (MonAReg[4 : 2] == 3'd4)? 32'h20000000 :
-    (MonAReg[4 : 2] == 3'd5)? 32'h00081000 :
+    (MonAReg[4 : 2] == 3'd5)? 32'h00080800 :
     (MonAReg[4 : 2] == 3'd6)? 32'h00000000 :
     32'h00000000;
 
@@ -4129,7 +4129,7 @@ module system_0_cpu_0 (
   always @(posedge clk or negedge reset_n)
     begin
       if (reset_n == 0)
-          F_pc <= 132096;
+          F_pc <= 131584;
       else if (F_pc_en)
           F_pc <= F_pc_nxt;
     end

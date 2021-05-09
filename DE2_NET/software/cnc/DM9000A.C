@@ -216,7 +216,7 @@ unsigned int  ReceivePacket (unsigned char *data_ptr,unsigned int *rx_len)
     /* enable RX (Broadcast/ ALL_MULTICAST) ~go */
 //    iow(RCR , RCR_set | RX_ENABLE | PASS_MULTICAST);  /* RCR REG. 05 RXEN Bit [0] = 1 to enable the RX machine/ filter */
     iow(RCR , RCR_set | RX_ENABLE| PASS_MULTICAST);  /* RCR REG. 05 RXEN Bit [0] = 1 to enable the RX machine/ filter */
-	outport(LED_RED_BASE,0xFF);
+//	outport(LED_RED_BASE,0xFF);
 
   } /* end NIC H/W system Data-Bus error */
 

@@ -1,8 +1,6 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="DE2_NET">
-		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_NET|system_0:u0|AUDIO_DAC_FIFO:audio_0|FIFO_16_256:u0|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_hlj1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_NET|system_0:u0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_q7o1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_NET|system_0:u0|system_0_cpu_0:cpu_0|system_0_cpu_0_nios2_oci:the_system_0_cpu_0_nios2_oci|system_0_cpu_0_nios2_ocimem:the_system_0_cpu_0_nios2_ocimem|system_0_cpu_0_ociram_sp_ram_module:system_0_cpu_0_ociram_sp_ram|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_mk71.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_NET|system_0:u0|system_0_cpu_0:cpu_0|system_0_cpu_0_register_bank_a_module:system_0_cpu_0_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_i7g1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_NET|system_0:u0|system_0_cpu_0:cpu_0|system_0_cpu_0_register_bank_b_module:system_0_cpu_0_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_j7g1.tdf"/>

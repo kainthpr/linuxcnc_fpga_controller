@@ -2,11 +2,11 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>23-Dec-2020 8:43:54 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1608774234802</BspGeneratedUnixTimeStamp>
-        <BspGeneratedLocation>C:\projects\DE2_NET\software\cnc_bsp</BspGeneratedLocation>
+        <BspGeneratedTimeStamp>9-May-2021 1:47:06 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1620582426408</BspGeneratedUnixTimeStamp>
+        <BspGeneratedLocation>C:\projects\cnc\DE2_NET\software\cnc_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
-        <SopcDesignFile>C:\projects\DE2_NET\system_0.sopcinfo</SopcDesignFile>
+        <SopcDesignFile>C:\projects\cnc\DE2_NET\system_0.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
         <Cpu>cpu_0</Cpu>
         <SchemaVersion>1.9</SchemaVersion>
@@ -194,7 +194,7 @@
                 <SettingName>hal.stdin</SettingName>
                 <Identifier>NONE</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>jtag_uart_0</Value>
+                <Value>uart_0</Value>
                 <DefaultValue>none</DefaultValue>
                 <DestinationFile>system_h_define</DestinationFile>
                 <Description>Slave descriptor of STDIN character-mode device. This setting is used by the ALT_STDIN family of defines in system.h.</Description>
@@ -206,7 +206,7 @@
                 <SettingName>hal.stdout</SettingName>
                 <Identifier>NONE</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>jtag_uart_0</Value>
+                <Value>uart_0</Value>
                 <DefaultValue>none</DefaultValue>
                 <DestinationFile>system_h_define</DestinationFile>
                 <Description>Slave descriptor of STDOUT character-mode device. This setting is used by the ALT_STDOUT family of defines in system.h.</Description>
@@ -894,128 +894,98 @@
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>epcs_controller</slaveDescriptor>
-                <addressRange>0x00081000 - 0x000817FF</addressRange>
+                <addressRange>0x00080800 - 0x00080FFF</addressRange>
                 <addressSpan>2048</addressSpan>
                 <attributes>flash, memory, non-volatile</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>cnc_module_0</slaveDescriptor>
-                <addressRange>0x00082000 - 0x000820FF</addressRange>
+                <addressRange>0x00081000 - 0x000810FF</addressRange>
                 <addressSpan>256</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>timer_1</slaveDescriptor>
-                <addressRange>0x00082100 - 0x0008211F</addressRange>
+                <addressRange>0x00081100 - 0x0008111F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>timer</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>timer_0</slaveDescriptor>
-                <addressRange>0x00082120 - 0x0008213F</addressRange>
+                <addressRange>0x00081120 - 0x0008113F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>timer</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>uart_0</slaveDescriptor>
-                <addressRange>0x00082140 - 0x0008215F</addressRange>
+                <addressRange>0x00081140 - 0x0008115F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>SD_CLK</slaveDescriptor>
-                <addressRange>0x00082160 - 0x0008216F</addressRange>
-                <addressSpan>16</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>SD_CMD</slaveDescriptor>
-                <addressRange>0x00082170 - 0x0008217F</addressRange>
-                <addressSpan>16</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>SD_DAT</slaveDescriptor>
-                <addressRange>0x00082180 - 0x0008218F</addressRange>
-                <addressSpan>16</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
                 <slaveDescriptor>switch_pio</slaveDescriptor>
-                <addressRange>0x00082190 - 0x0008219F</addressRange>
+                <addressRange>0x00081160 - 0x0008116F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>button_pio</slaveDescriptor>
-                <addressRange>0x000821A0 - 0x000821AF</addressRange>
+                <addressRange>0x00081170 - 0x0008117F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>led_green</slaveDescriptor>
-                <addressRange>0x000821B0 - 0x000821BF</addressRange>
+                <addressRange>0x00081180 - 0x0008118F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>led_red</slaveDescriptor>
-                <addressRange>0x000821C0 - 0x000821CF</addressRange>
+                <addressRange>0x00081190 - 0x0008119F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>lcd_16207_0</slaveDescriptor>
-                <addressRange>0x000821D0 - 0x000821DF</addressRange>
+                <addressRange>0x000811A0 - 0x000811AF</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>DM9000A</slaveDescriptor>
-                <addressRange>0x000821E8 - 0x000821EF</addressRange>
+                <addressRange>0x000811B8 - 0x000811BF</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sysid_qsys_0</slaveDescriptor>
-                <addressRange>0x000821F0 - 0x000821F7</addressRange>
+                <addressRange>0x000811C0 - 0x000811C7</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>ISP1362_dc</slaveDescriptor>
-                <addressRange>0x000821F8 - 0x000821FF</addressRange>
+                <addressRange>0x000811C8 - 0x000811CF</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>ISP1362_hc</slaveDescriptor>
-                <addressRange>0x00082200 - 0x00082207</addressRange>
+                <addressRange>0x000811D0 - 0x000811D7</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart_0</slaveDescriptor>
-                <addressRange>0x00082208 - 0x0008220F</addressRange>
+                <addressRange>0x000811D8 - 0x000811DF</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>SEG7_Display</slaveDescriptor>
-                <addressRange>0x00082210 - 0x00082213</addressRange>
+                <addressRange>0x000811E0 - 0x000811E3</addressRange>
                 <addressSpan>4</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>Audio_0</slaveDescriptor>
-                <addressRange>0x00082214 - 0x00082217</addressRange>
-                <addressSpan>4</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>VGA_0</slaveDescriptor>
-                <addressRange>0x00200000 - 0x003FFFFF</addressRange>
-                <addressSpan>2097152</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>

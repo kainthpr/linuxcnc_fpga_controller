@@ -103,7 +103,7 @@ ACDS_VERSION := 13.0sp1
 # BUILD_NUMBER: 232
 
 SETTINGS_FILE := settings.bsp
-SOPC_FILE := C:/projects/DE2_NET/system_0.sopcinfo
+SOPC_FILE := C:/projects/cnc/DE2_NET/system_0.sopcinfo
 
 #-------------------------------------------------------------------------------
 #                             TOOL & COMMAND DEFINITIONS

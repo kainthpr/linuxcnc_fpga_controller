@@ -22,7 +22,7 @@
       </object> 
      </void> 
      <void property="filename"> 
-      <string>C:\projects\DE2_NET\DE2_NET.sof</string> 
+      <string>C:\projects\cnc\DE2_NET\DE2_NET.sof</string> 
      </void> 
      <void property="memoryName"> 
       <string>epcs_controller</string> 
@@ -49,7 +49,7 @@
       </object> 
      </void> 
      <void property="filename"> 
-      <string>C:\projects\DE2_NET\software\cnc\cnc.elf</string> 
+      <string>C:\projects\cnc\DE2_NET\software\cnc\cnc.elf</string> 
      </void> 
      <void property="memoryName"> 
       <string>epcs_controller</string> 
@@ -68,7 +68,7 @@
    </void> 
    <void method="put"> 
     <string>sopcinfoFile</string> 
-    <string>C:\projects\DE2_NET\system_0.sopcinfo</string> 
+    <string>C:\projects\cnc\DE2_NET\system_0.sopcinfo</string> 
    </void> 
    <void method="put"> 
     <string>physicalCpuName</string> 
@@ -84,15 +84,15 @@
    </void> 
    <void method="put"> 
     <string>bspFile</string> 
-    <string>C:\projects\DE2_NET\software\cnc_bsp\settings.bsp</string> 
+    <string>C:\projects\cnc\DE2_NET\software\cnc_bsp\settings.bsp</string> 
    </void> 
    <void method="put"> 
     <string>flashFilesDir</string> 
-    <string>C:\projects\DE2_NET\software\cnc_bsp\flash</string> 
+    <string>C:\projects\cnc\DE2_NET\software\cnc_bsp\flash</string> 
    </void> 
    <void method="put"> 
     <string>scriptDir</string> 
-    <string>C:\projects\DE2_NET\software\cnc_bsp\script</string> 
+    <string>C:\projects\cnc\DE2_NET\software\cnc_bsp\script</string> 
    </void> 
    <void method="put"> 
     <string>eraseAllEnabled</string> 
@@ -112,7 +112,7 @@
    </void> 
    <void method="put"> 
     <string>processorCableName</string> 
-    <string>USB-Blaster on localhost [USB-0]</string> 
+    <null/> 
    </void> 
    <void method="put"> 
     <string>processorDeviceIndex</string> 
@@ -124,7 +124,7 @@
    </void> 
    <void method="put"> 
     <string>userQpfFile</string> 
-    <string>C:\projects\DE2_NET\DE2_NET.qpf</string> 
+    <string>C:\projects\cnc\DE2_NET\DE2_NET.qpf</string> 
    </void> 
   </void> 
   <void property="map"> 

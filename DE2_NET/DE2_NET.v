@@ -314,7 +314,10 @@ assign	LCD_BLON	=	1'b1;	//	LCD Back Light
 assign	SD_DAT[0]		=	1'bz;
 assign	AUD_ADCLRCK	=	AUD_DACLRCK;
 
-//
+// uart_through_gpio
+wire uart_rx;
+wire uart_tx;
+
 wire [31:0] ogpio;
 wire [31:0] igpio;
 wire [4:0]  sg_steps;
@@ -322,43 +325,46 @@ wire [4:0]  sg_dirs;
 wire spindle_pwm;
 wire cp;
 
-assign	GPIO_1[35] = sg_dirs[0];
-assign	GPIO_1[34] = ~sg_dirs[0];
-assign	GPIO_1[33] = sg_steps[0];
-assign	GPIO_1[32] = ~sg_steps[0];
+assign igpio[31:16] = 16'b0;  // reserved for pendant buttons using uart.
+							  // do not use these.
 
-assign	GPIO_1[31] = sg_dirs[1];
-assign	GPIO_1[30] = ~sg_dirs[1];
-assign	GPIO_1[29] = sg_steps[1];
-assign	GPIO_1[28] = ~sg_steps[1];
+assign	GPIO_1[21] = ~sg_dirs[0];
+assign	GPIO_1[23] = sg_steps[0];
 
-assign	GPIO_1[26] = sg_dirs[2];
-assign	GPIO_1[27] = ~sg_dirs[2];
-assign	GPIO_1[24] = sg_steps[2];
-assign	GPIO_1[25] = ~sg_steps[2];
+assign	GPIO_1[17] = ~sg_dirs[1];
+assign	GPIO_1[19] = sg_steps[1];
 
-assign	GPIO_1[22] = ~spindle_pwm;  // Spindle 0 PWM
-assign	GPIO_1[23] = ogpio[0];     // Spindle 1 CW
-assign  igpio[0] = GPIO_1[20];     // Spindle 2 index
+assign	GPIO_1[13] = sg_dirs[2];
+assign	GPIO_1[15] = sg_steps[2];
 
-assign	GPIO_1[18] = ogpio[1];  // 1
-assign	GPIO_1[21] = ogpio[2];  // 2
-assign	GPIO_1[19] = cp;  
-								// gpio 3 not assigned to anything yet
+assign	GPIO_1[9] = sg_dirs[3];
+assign	GPIO_1[11] = sg_steps[3];
 
-assign igpio[1] = GPIO_1[17];  // 4
-assign igpio[2] = GPIO_1[16];  // 5
-assign igpio[3] = GPIO_1[15];  // 6
-assign igpio[4] = GPIO_1[14];  // 7
-assign igpio[5] = GPIO_1[13];  // 8
+assign	GPIO_1[31] = ~spindle_pwm;  // Spindle 0 PWM
+assign	GPIO_1[27] = ogpio[0];     // Spindle 1 CW
+assign  igpio[0] = GPIO_1[01];     // Spindle 2 index
 
-assign  igpio[17:6] = SW[17:6]; 
+assign	GPIO_1[7] = ogpio[2];   // flood
+assign	GPIO_1[25] = cp;  
+
+assign igpio[1] = GPIO_1[03];  // limit
+assign igpio[2] = GPIO_1[29];  // probe
+assign igpio[3] = GPIO_1[05];  // estop
+assign igpio[4] = GPIO_1[00];  // parallel port 13
+assign igpio[5] = GPIO_1[33];  // pendant enc a
+assign igpio[6] = GPIO_1[35];  // pendant enc b
+
+// pendant
+assign GPIO_1[2] = uart_tx;
+assign uart_rx = GPIO_1[4];
+
+assign  igpio[15:7] = SW[15:7];
 
 wire [17:0] LEDR_FROM_PC;
 wire [8:0] LEDG_FROM_NIOS;
 
-assign LEDR[11:0] = ogpio[11:0];
-
+assign LEDR[10:0] = ogpio[10:0];  // ogpio [15:8] == pendant LEDs. For Debug only
+assign LEDR[17:11] = igpio[6:0];
 assign LEDG[8] = LEDG_FROM_NIOS[8];
 assign LEDG[0] = sg_steps[0];
 assign LEDG[2] = sg_steps[1];
@@ -389,39 +395,11 @@ assign	SD_DAT[3]=	1'b1;
 Reset_Delay	delay1	(.iRST(KEY[0]),.iCLK(CLOCK_50),.oRESET(CPU_RESET));
 
 SDRAM_PLL 	PLL1	(.inclk0(CLOCK_50),.c0(CPU_CLK),.c1(DRAM_CLK),.c2(CLK_25));
-Audio_PLL 	PLL2	(.areset(!CPU_RESET),.inclk0(CLOCK_27),.c0(CLK_18_4));
 
 system_0 	u0	(
 				// 1) global signals:
    				  .clk_50(CPU_CLK),
                  .reset_n(CPU_RESET),
-
-                // the_Audio_0
-					  .audio_0_oAUD_DATA                    (AUD_DACDAT),   //.oAUD_DATA
-                 .audio_0_oAUD_LRCK                    (AUD_DACLRCK),  //.oAUD_LRCK
-                 .audio_0_oAUD_BCK                     (AUD_BCLK),     //.oAUD_BCK
-                 .audio_0_oAUD_XCK                     (AUD_XCK),      //.oAUD_XCK
-                 .audio_0_iCLK_18_4                    (CLK_18_4),  
-
-                // the_VGA_0			  
-					  .vga_0_VGA_R                          (VGA_R),        //.VGA_R
-                 .vga_0_VGA_G                          (VGA_G),        //.VGA_G
-                 .vga_0_VGA_B                          (VGA_B),        //.VGA_B
-                 .vga_0_VGA_HS                         (VGA_HS),       //.VGA_HS
-                 .vga_0_VGA_VS                         (VGA_VS),       //.VGA_VS
-                 .vga_0_VGA_SYNC                       (VGA_SYNC),     //.VGA_SYNC
-                 .vga_0_VGA_BLANK                      (VGA_BLANK),    //.VGA_BLANK
-                 .vga_0_VGA_CLK                        (VGA_CLK),      //.VGA_CLK
-                 .vga_0_iCLK_25                        (CLK_25),       //.iCLK_25
-
-                // the_SD_CLK
-                 .out_port_from_the_SD_CLK(SD_CLK),
-
-                // the_SD_CMD
-                 .bidir_port_to_and_from_the_SD_CMD(SD_CMD),
-
-                // the_SD_DAT
-                 .bidir_port_to_and_from_the_SD_DAT(SD_DAT[0]),
 
                 // the_SEG7_Display
 					  .seg7_display_oSEG0                   (HEX0),        //seg7_display.oSEG0
@@ -500,8 +478,8 @@ system_0 	u0	(
                  .write_n_to_the_cfi_flash_0(FL_WE_N),
 
                 // the_uart_0
-                 .rxd_to_the_uart_0(UART_RXD),
-                 .txd_from_the_uart_0(UART_TXD),
+                 .rxd_to_the_uart_0(uart_rx),
+                 .txd_from_the_uart_0(uart_tx),
 
 				// cnc hardware
 				.cnc_module_ospindle_pwm              (spindle_pwm),              //                      cnc_module.ospindle_pwm
@@ -509,15 +487,9 @@ system_0 	u0	(
 				.cnc_module_odirs                     (sg_dirs),                     //                                .odirs
 				.cnc_module_ogpio                     (ogpio),                     //                                .ogpio
 				.cnc_module_igpio                     (igpio),                     //                                .igpio
-				.cnc_module_osteps                    (sg_steps)                     //                                .osteps
-
+				.cnc_module_osteps                    (sg_steps),                     //                                .osteps
+				
                 );
 
-I2C_AV_Config 	u1	(	//	Host Side
-						.iCLK(CLOCK_50),
-						.iRST_N(KEY[0]),
-						//	I2C Side
-						.I2C_SCLK(I2C_SCLK),
-						.I2C_SDAT(I2C_SDAT)	);
 
 endmodule

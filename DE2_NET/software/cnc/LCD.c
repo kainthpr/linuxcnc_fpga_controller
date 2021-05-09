@@ -36,8 +36,8 @@ void LCD_Line2()
 //-------------------------------------------------------------------------
 void LCD_Test()
 {
-  char Text1[16] = "CNC v2          ";
-  char Text2[16] = "Ethernet Testing";
+  char Text1[16] = "CNC v13         ";
+  char Text2[16] = "LinuxCNC Testing";
   //  Initial LCD
   LCD_Init();
   //  Show Text to LCD

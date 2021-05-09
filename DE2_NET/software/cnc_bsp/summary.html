@@ -7,7 +7,7 @@
 <td width="20%" bgcolor="#77BBFF">BSP Type:</td><td>hal</td>
 </tr>
 <tr mode="wrap">
-<td width="20%" bgcolor="#77BBFF">SOPC Design File:</td><td>C:\projects\DE2_NET\system_0.sopcinfo</td>
+<td width="20%" bgcolor="#77BBFF">SOPC Design File:</td><td>C:\projects\cnc\DE2_NET\system_0.sopcinfo</td>
 </tr>
 <tr mode="wrap">
 <td width="20%" bgcolor="#77BBFF">Quartus JDI File:</td><td>default</td>
@@ -22,13 +22,13 @@
 <td width="20%" bgcolor="#77BBFF">BSP Version:</td><td>default</td>
 </tr>
 <tr mode="wrap">
-<td width="20%" bgcolor="#77BBFF">BSP Generated On:</td><td>23-Dec-2020 8:43:54 PM</td>
+<td width="20%" bgcolor="#77BBFF">BSP Generated On:</td><td>9-May-2021 1:47:06 PM</td>
 </tr>
 <tr mode="wrap">
-<td width="20%" bgcolor="#77BBFF">BSP Generated Timestamp:</td><td>1608774234802</td>
+<td width="20%" bgcolor="#77BBFF">BSP Generated Timestamp:</td><td>1620582426408</td>
 </tr>
 <tr mode="wrap">
-<td width="20%" bgcolor="#77BBFF">BSP Generated Location:</td><td>C:\projects\DE2_NET\software\cnc_bsp</td>
+<td width="20%" bgcolor="#77BBFF">BSP Generated Location:</td><td>C:\projects\cnc\DE2_NET\software\cnc_bsp</td>
 </tr>
 </table>
 <br>
@@ -44,67 +44,52 @@
 <td>sdram_0</td><td>0x01000000 - 0x017FFFFF</td><td>8388608</td><td class="listing">memory</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>VGA_0</td><td>0x00200000 - 0x003FFFFF</td><td>2097152</td><td class="listing">&nbsp;</td>
+<td>SEG7_Display</td><td>0x000811E0 - 0x000811E3</td><td>4</td><td class="listing">&nbsp;</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>Audio_0</td><td>0x00082214 - 0x00082217</td><td>4</td><td class="listing">&nbsp;</td>
+<td>jtag_uart_0</td><td>0x000811D8 - 0x000811DF</td><td>8</td><td class="listing">printable</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>SEG7_Display</td><td>0x00082210 - 0x00082213</td><td>4</td><td class="listing">&nbsp;</td>
+<td>ISP1362_hc</td><td>0x000811D0 - 0x000811D7</td><td>8</td><td class="listing">&nbsp;</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>jtag_uart_0</td><td>0x00082208 - 0x0008220F</td><td>8</td><td class="listing">printable</td>
+<td>ISP1362_dc</td><td>0x000811C8 - 0x000811CF</td><td>8</td><td class="listing">&nbsp;</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>ISP1362_hc</td><td>0x00082200 - 0x00082207</td><td>8</td><td class="listing">&nbsp;</td>
+<td>sysid_qsys_0</td><td>0x000811C0 - 0x000811C7</td><td>8</td><td class="listing">&nbsp;</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>ISP1362_dc</td><td>0x000821F8 - 0x000821FF</td><td>8</td><td class="listing">&nbsp;</td>
+<td>DM9000A</td><td>0x000811B8 - 0x000811BF</td><td>8</td><td class="listing">&nbsp;</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>sysid_qsys_0</td><td>0x000821F0 - 0x000821F7</td><td>8</td><td class="listing">&nbsp;</td>
+<td>lcd_16207_0</td><td>0x000811A0 - 0x000811AF</td><td>16</td><td class="listing">printable</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>DM9000A</td><td>0x000821E8 - 0x000821EF</td><td>8</td><td class="listing">&nbsp;</td>
+<td>led_red</td><td>0x00081190 - 0x0008119F</td><td>16</td><td class="listing">&nbsp;</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>lcd_16207_0</td><td>0x000821D0 - 0x000821DF</td><td>16</td><td class="listing">printable</td>
+<td>led_green</td><td>0x00081180 - 0x0008118F</td><td>16</td><td class="listing">&nbsp;</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>led_red</td><td>0x000821C0 - 0x000821CF</td><td>16</td><td class="listing">&nbsp;</td>
+<td>button_pio</td><td>0x00081170 - 0x0008117F</td><td>16</td><td class="listing">&nbsp;</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>led_green</td><td>0x000821B0 - 0x000821BF</td><td>16</td><td class="listing">&nbsp;</td>
+<td>switch_pio</td><td>0x00081160 - 0x0008116F</td><td>16</td><td class="listing">&nbsp;</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>button_pio</td><td>0x000821A0 - 0x000821AF</td><td>16</td><td class="listing">&nbsp;</td>
+<td>uart_0</td><td>0x00081140 - 0x0008115F</td><td>32</td><td class="listing">printable</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>switch_pio</td><td>0x00082190 - 0x0008219F</td><td>16</td><td class="listing">&nbsp;</td>
+<td>timer_0</td><td>0x00081120 - 0x0008113F</td><td>32</td><td class="listing">timer</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>SD_DAT</td><td>0x00082180 - 0x0008218F</td><td>16</td><td class="listing">&nbsp;</td>
+<td>timer_1</td><td>0x00081100 - 0x0008111F</td><td>32</td><td class="listing">timer</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>SD_CMD</td><td>0x00082170 - 0x0008217F</td><td>16</td><td class="listing">&nbsp;</td>
+<td>cnc_module_0</td><td>0x00081000 - 0x000810FF</td><td>256</td><td class="listing">&nbsp;</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>SD_CLK</td><td>0x00082160 - 0x0008216F</td><td>16</td><td class="listing">&nbsp;</td>
-</tr>
-<tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>uart_0</td><td>0x00082140 - 0x0008215F</td><td>32</td><td class="listing">printable</td>
-</tr>
-<tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>timer_0</td><td>0x00082120 - 0x0008213F</td><td>32</td><td class="listing">timer</td>
-</tr>
-<tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>timer_1</td><td>0x00082100 - 0x0008211F</td><td>32</td><td class="listing">timer</td>
-</tr>
-<tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>cnc_module_0</td><td>0x00082000 - 0x000820FF</td><td>256</td><td class="listing">&nbsp;</td>
-</tr>
-<tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>epcs_controller</td><td>0x00081000 - 0x000817FF</td><td>2048</td><td class="listing">flash, memory, non-volatile</td>
+<td>epcs_controller</td><td>0x00080800 - 0x00080FFF</td><td>2048</td><td class="listing">flash, memory, non-volatile</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
 <td>sram_0</td><td>0x00000000 - 0x0007FFFF</td><td>524288</td><td class="listing">memory</td>
@@ -2019,7 +2004,7 @@
 <td width="20%">Default Value:</td><td>none</td>
 </tr>
 <tr>
-<td width="20%">Value:</td><td>jtag_uart_0</td>
+<td width="20%">Value:</td><td>uart_0</td>
 </tr>
 <tr>
 <td width="20%">Type:</td><td>UnquotedString</td>
@@ -2046,7 +2031,7 @@
 <td width="20%">Default Value:</td><td>none</td>
 </tr>
 <tr>
-<td width="20%">Value:</td><td>jtag_uart_0</td>
+<td width="20%">Value:</td><td>uart_0</td>
 </tr>
 <tr>
 <td width="20%">Type:</td><td>UnquotedString</td>

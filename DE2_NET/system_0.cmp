@@ -1,7 +1,6 @@
 	component system_0 is
 		port (
 			clk_50                               : in    std_logic                     := 'X';             -- clk
-			bidir_port_to_and_from_the_SD_DAT    : inout std_logic                     := 'X';             -- export
 			out_port_from_the_led_red            : out   std_logic_vector(17 downto 0);                    -- export
 			zs_addr_from_the_sdram_0             : out   std_logic_vector(11 downto 0);                    -- addr
 			zs_ba_from_the_sdram_0               : out   std_logic_vector(1 downto 0);                     -- ba
@@ -18,7 +17,6 @@
 			tri_state_bridge_0_address           : out   std_logic_vector(21 downto 0);                    -- tri_state_bridge_0_address
 			select_n_to_the_cfi_flash_0          : out   std_logic_vector(0 downto 0);                     -- select_n_to_the_cfi_flash_0
 			reset_n                              : in    std_logic                     := 'X';             -- reset_n
-			bidir_port_to_and_from_the_SD_CMD    : inout std_logic                     := 'X';             -- export
 			in_port_to_the_button_pio            : in    std_logic_vector(3 downto 0)  := (others => 'X'); -- export
 			USB_DATA_to_and_from_the_ISP1362     : inout std_logic_vector(15 downto 0) := (others => 'X'); -- DATA
 			USB_ADDR_from_the_ISP1362            : out   std_logic_vector(1 downto 0);                     -- ADDR
@@ -28,7 +26,6 @@
 			USB_RST_N_from_the_ISP1362           : out   std_logic;                                        -- RST_N
 			USB_INT0_to_the_ISP1362              : in    std_logic                     := 'X';             -- INT0
 			USB_INT1_to_the_ISP1362              : in    std_logic                     := 'X';             -- INT1
-			out_port_from_the_SD_CLK             : out   std_logic;                                        -- export
 			out_port_from_the_led_green          : out   std_logic_vector(8 downto 0);                     -- export
 			in_port_to_the_switch_pio            : in    std_logic_vector(17 downto 0) := (others => 'X'); -- export
 			LCD_RS_from_the_lcd_16207_0          : out   std_logic;                                        -- RS
@@ -37,20 +34,6 @@
 			LCD_E_from_the_lcd_16207_0           : out   std_logic;                                        -- E
 			rxd_to_the_uart_0                    : in    std_logic                     := 'X';             -- rxd
 			txd_from_the_uart_0                  : out   std_logic;                                        -- txd
-			audio_0_oAUD_DATA                    : out   std_logic;                                        -- oAUD_DATA
-			audio_0_oAUD_LRCK                    : out   std_logic;                                        -- oAUD_LRCK
-			audio_0_oAUD_BCK                     : out   std_logic;                                        -- oAUD_BCK
-			audio_0_oAUD_XCK                     : out   std_logic;                                        -- oAUD_XCK
-			audio_0_iCLK_18_4                    : in    std_logic                     := 'X';             -- iCLK_18_4
-			vga_0_VGA_R                          : out   std_logic_vector(9 downto 0);                     -- VGA_R
-			vga_0_VGA_G                          : out   std_logic_vector(9 downto 0);                     -- VGA_G
-			vga_0_VGA_B                          : out   std_logic_vector(9 downto 0);                     -- VGA_B
-			vga_0_VGA_HS                         : out   std_logic;                                        -- VGA_HS
-			vga_0_VGA_VS                         : out   std_logic;                                        -- VGA_VS
-			vga_0_VGA_SYNC                       : out   std_logic;                                        -- VGA_SYNC
-			vga_0_VGA_BLANK                      : out   std_logic;                                        -- VGA_BLANK
-			vga_0_VGA_CLK                        : out   std_logic;                                        -- VGA_CLK
-			vga_0_iCLK_25                        : in    std_logic                     := 'X';             -- iCLK_25
 			dm9000a_iOSC_50                      : in    std_logic                     := 'X';             -- iOSC_50
 			dm9000a_ENET_DATA                    : inout std_logic_vector(15 downto 0) := (others => 'X'); -- ENET_DATA
 			dm9000a_ENET_CMD                     : out   std_logic;                                        -- ENET_CMD

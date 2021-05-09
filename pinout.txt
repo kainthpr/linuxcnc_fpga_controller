@@ -1,0 +1,23 @@
+DE2 | PP
+00 -- 13  <- IGPIO_C
+01 -- 12  <- IGPIO_B  SPINDLE_IDX
+03 -- 11  <- limit
+05 -- 10  <- estop
+07 -- 09  -> flood 
+09 -- 08  -> adir
+11 -- 07  -> astep
+13 -- 06  -> zdir 
+15 -- 05  -> zstep 
+17 -- 04  -> ydir 
+19 -- 03  -> ystep 
+21 -- 02  -> xdir 
+23 -- 01  -> xstep 
+25 -- 17  -> charge_pump  
+27 -- 16  -> spindle_cw  
+29 -- 15  <- IGPIO_A   PROBE
+31 -- 14  -> spindle_pwm 
+
+33 -- pendant_enc_A
+35 -- pendant_enc_B
+02 -- xx  -> uart_tx
+04 -- xx  <- uart_rx

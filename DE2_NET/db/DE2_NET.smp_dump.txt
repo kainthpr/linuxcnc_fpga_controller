@@ -1,10 +1,4 @@
 
-State Machine - |DE2_NET|I2C_AV_Config:u1|mSetup_ST
-Name mSetup_ST.0000 mSetup_ST.0010 mSetup_ST.0001 
-mSetup_ST.0000 0 0 0 
-mSetup_ST.0001 1 0 1 
-mSetup_ST.0010 1 1 0 
-
 State Machine - |DE2_NET|system_0:u0|system_0_cpu_0:cpu_0|system_0_cpu_0_nios2_oci:the_system_0_cpu_0_nios2_oci|system_0_cpu_0_jtag_debug_module_wrapper:the_system_0_cpu_0_jtag_debug_module_wrapper|system_0_cpu_0_jtag_debug_module_tck:the_system_0_cpu_0_jtag_debug_module_tck|DRsize
 Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
 DRsize.000 0 0 0 0 0 0 

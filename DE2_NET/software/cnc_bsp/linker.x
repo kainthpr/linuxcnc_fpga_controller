@@ -2,9 +2,9 @@
  * linker.x - Linker script
  *
  * Machine generated for CPU 'cpu_0' in SOPC Builder design 'system_0'
- * SOPC Builder design path: C:/projects/DE2_NET/system_0.sopcinfo
+ * SOPC Builder design path: C:/projects/cnc/DE2_NET/system_0.sopcinfo
  *
- * Generated: Tue Sep 22 23:43:11 EDT 2020
+ * Generated: Sat May 08 11:25:34 EDT 2021
  */
 
 /*
@@ -52,15 +52,15 @@ MEMORY
 {
     sram_0_BEFORE_EXCEPTION : ORIGIN = 0x0, LENGTH = 32
     sram_0 : ORIGIN = 0x20, LENGTH = 524256
-    reset : ORIGIN = 0x81000, LENGTH = 32
-    epcs_controller : ORIGIN = 0x81020, LENGTH = 2016
+    reset : ORIGIN = 0x80800, LENGTH = 32
+    epcs_controller : ORIGIN = 0x80820, LENGTH = 2016
     sdram_0 : ORIGIN = 0x1000000, LENGTH = 8388608
     cfi_flash_0 : ORIGIN = 0x1800000, LENGTH = 4194304
 }
 
 /* Define symbols for each memory base-address */
 __alt_mem_sram_0 = 0x0;
-__alt_mem_epcs_controller = 0x81000;
+__alt_mem_epcs_controller = 0x80800;
 __alt_mem_sdram_0 = 0x1000000;
 __alt_mem_cfi_flash_0 = 0x1800000;
 

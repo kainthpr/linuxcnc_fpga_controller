@@ -2,9 +2,9 @@
  * system.h - SOPC Builder system and BSP software package information
  *
  * Machine generated for CPU 'cpu_0' in SOPC Builder design 'system_0'
- * SOPC Builder design path: C:/projects/DE2_NET/system_0.sopcinfo
+ * SOPC Builder design path: C:/projects/cnc/DE2_NET/system_0.sopcinfo
  *
- * Generated: Wed Dec 23 20:44:00 EST 2020
+ * Generated: Sat May 08 21:23:30 EDT 2021
  */
 
 /*
@@ -56,20 +56,6 @@
 
 
 /*
- * Audio_0 configuration
- *
- */
-
-#define ALT_MODULE_CLASS_Audio_0 audio_dac_fifo
-#define AUDIO_0_BASE 0x82214
-#define AUDIO_0_IRQ -1
-#define AUDIO_0_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define AUDIO_0_NAME "/dev/Audio_0"
-#define AUDIO_0_SPAN 4
-#define AUDIO_0_TYPE "audio_dac_fifo"
-
-
-/*
  * CPU configuration
  *
  */
@@ -99,7 +85,7 @@
 #define ALT_CPU_ICACHE_SIZE 0
 #define ALT_CPU_INST_ADDR_WIDTH 0x19
 #define ALT_CPU_NAME "cpu_0"
-#define ALT_CPU_RESET_ADDR 0x81000
+#define ALT_CPU_RESET_ADDR 0x80800
 
 
 /*
@@ -129,7 +115,7 @@
 #define NIOS2_ICACHE_LINE_SIZE_LOG2 0
 #define NIOS2_ICACHE_SIZE 0
 #define NIOS2_INST_ADDR_WIDTH 0x19
-#define NIOS2_RESET_ADDR 0x81000
+#define NIOS2_RESET_ADDR 0x80800
 
 
 /*
@@ -138,7 +124,7 @@
  */
 
 #define ALT_MODULE_CLASS_DM9000A dm9000a
-#define DM9000A_BASE 0x821e8
+#define DM9000A_BASE 0x811b8
 #define DM9000A_IRQ 8
 #define DM9000A_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define DM9000A_NAME "/dev/DM9000A"
@@ -161,8 +147,6 @@
 #define __ALTERA_AVALON_UART
 #define __ALTERA_GENERIC_TRISTATE_CONTROLLER
 #define __ALTERA_NIOS2_QSYS
-#define __AUDIO_DAC_FIFO
-#define __BINARY_VGA_CONTROLLER
 #define __CNC_MODULE
 #define __DM9000A
 #define __ISP1362_IF
@@ -176,7 +160,7 @@
  */
 
 #define ALT_MODULE_CLASS_ISP1362_dc ISP1362_IF
-#define ISP1362_DC_BASE 0x821f8
+#define ISP1362_DC_BASE 0x811c8
 #define ISP1362_DC_IRQ 7
 #define ISP1362_DC_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define ISP1362_DC_NAME "/dev/ISP1362_dc"
@@ -190,7 +174,7 @@
  */
 
 #define ALT_MODULE_CLASS_ISP1362_hc ISP1362_IF
-#define ISP1362_HC_BASE 0x82200
+#define ISP1362_HC_BASE 0x811d0
 #define ISP1362_HC_IRQ 6
 #define ISP1362_HC_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define ISP1362_HC_NAME "/dev/ISP1362_hc"
@@ -199,93 +183,12 @@
 
 
 /*
- * SD_CLK configuration
- *
- */
-
-#define ALT_MODULE_CLASS_SD_CLK altera_avalon_pio
-#define SD_CLK_BASE 0x82160
-#define SD_CLK_BIT_CLEARING_EDGE_REGISTER 0
-#define SD_CLK_BIT_MODIFYING_OUTPUT_REGISTER 0
-#define SD_CLK_CAPTURE 0
-#define SD_CLK_DATA_WIDTH 1
-#define SD_CLK_DO_TEST_BENCH_WIRING 0
-#define SD_CLK_DRIVEN_SIM_VALUE 0
-#define SD_CLK_EDGE_TYPE "NONE"
-#define SD_CLK_FREQ 50000000
-#define SD_CLK_HAS_IN 0
-#define SD_CLK_HAS_OUT 1
-#define SD_CLK_HAS_TRI 0
-#define SD_CLK_IRQ -1
-#define SD_CLK_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define SD_CLK_IRQ_TYPE "NONE"
-#define SD_CLK_NAME "/dev/SD_CLK"
-#define SD_CLK_RESET_VALUE 0
-#define SD_CLK_SPAN 16
-#define SD_CLK_TYPE "altera_avalon_pio"
-
-
-/*
- * SD_CMD configuration
- *
- */
-
-#define ALT_MODULE_CLASS_SD_CMD altera_avalon_pio
-#define SD_CMD_BASE 0x82170
-#define SD_CMD_BIT_CLEARING_EDGE_REGISTER 0
-#define SD_CMD_BIT_MODIFYING_OUTPUT_REGISTER 0
-#define SD_CMD_CAPTURE 0
-#define SD_CMD_DATA_WIDTH 1
-#define SD_CMD_DO_TEST_BENCH_WIRING 0
-#define SD_CMD_DRIVEN_SIM_VALUE 0
-#define SD_CMD_EDGE_TYPE "NONE"
-#define SD_CMD_FREQ 50000000
-#define SD_CMD_HAS_IN 0
-#define SD_CMD_HAS_OUT 0
-#define SD_CMD_HAS_TRI 1
-#define SD_CMD_IRQ -1
-#define SD_CMD_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define SD_CMD_IRQ_TYPE "NONE"
-#define SD_CMD_NAME "/dev/SD_CMD"
-#define SD_CMD_RESET_VALUE 0
-#define SD_CMD_SPAN 16
-#define SD_CMD_TYPE "altera_avalon_pio"
-
-
-/*
- * SD_DAT configuration
- *
- */
-
-#define ALT_MODULE_CLASS_SD_DAT altera_avalon_pio
-#define SD_DAT_BASE 0x82180
-#define SD_DAT_BIT_CLEARING_EDGE_REGISTER 0
-#define SD_DAT_BIT_MODIFYING_OUTPUT_REGISTER 0
-#define SD_DAT_CAPTURE 0
-#define SD_DAT_DATA_WIDTH 1
-#define SD_DAT_DO_TEST_BENCH_WIRING 0
-#define SD_DAT_DRIVEN_SIM_VALUE 0
-#define SD_DAT_EDGE_TYPE "NONE"
-#define SD_DAT_FREQ 50000000
-#define SD_DAT_HAS_IN 0
-#define SD_DAT_HAS_OUT 0
-#define SD_DAT_HAS_TRI 1
-#define SD_DAT_IRQ -1
-#define SD_DAT_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define SD_DAT_IRQ_TYPE "NONE"
-#define SD_DAT_NAME "/dev/SD_DAT"
-#define SD_DAT_RESET_VALUE 0
-#define SD_DAT_SPAN 16
-#define SD_DAT_TYPE "altera_avalon_pio"
-
-
-/*
  * SEG7_Display configuration
  *
  */
 
 #define ALT_MODULE_CLASS_SEG7_Display seg7_lut_8
-#define SEG7_DISPLAY_BASE 0x82210
+#define SEG7_DISPLAY_BASE 0x811e0
 #define SEG7_DISPLAY_IRQ -1
 #define SEG7_DISPLAY_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SEG7_DISPLAY_NAME "/dev/SEG7_Display"
@@ -309,38 +212,24 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart_0"
-#define ALT_STDERR_BASE 0x82208
+#define ALT_STDERR_BASE 0x811d8
 #define ALT_STDERR_DEV jtag_uart_0
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
-#define ALT_STDIN "/dev/jtag_uart_0"
-#define ALT_STDIN_BASE 0x82208
-#define ALT_STDIN_DEV jtag_uart_0
-#define ALT_STDIN_IS_JTAG_UART
+#define ALT_STDIN "/dev/uart_0"
+#define ALT_STDIN_BASE 0x81140
+#define ALT_STDIN_DEV uart_0
+#define ALT_STDIN_IS_UART
 #define ALT_STDIN_PRESENT
-#define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
-#define ALT_STDOUT "/dev/jtag_uart_0"
-#define ALT_STDOUT_BASE 0x82208
-#define ALT_STDOUT_DEV jtag_uart_0
-#define ALT_STDOUT_IS_JTAG_UART
+#define ALT_STDIN_TYPE "altera_avalon_uart"
+#define ALT_STDOUT "/dev/uart_0"
+#define ALT_STDOUT_BASE 0x81140
+#define ALT_STDOUT_DEV uart_0
+#define ALT_STDOUT_IS_UART
 #define ALT_STDOUT_PRESENT
-#define ALT_STDOUT_TYPE "altera_avalon_jtag_uart"
+#define ALT_STDOUT_TYPE "altera_avalon_uart"
 #define ALT_SYSTEM_NAME "system_0"
-
-
-/*
- * VGA_0 configuration
- *
- */
-
-#define ALT_MODULE_CLASS_VGA_0 binary_vga_controller
-#define VGA_0_BASE 0x200000
-#define VGA_0_IRQ -1
-#define VGA_0_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define VGA_0_NAME "/dev/VGA_0"
-#define VGA_0_SPAN 2097152
-#define VGA_0_TYPE "binary_vga_controller"
 
 
 /*
@@ -349,7 +238,7 @@
  */
 
 #define ALT_MODULE_CLASS_button_pio altera_avalon_pio
-#define BUTTON_PIO_BASE 0x821a0
+#define BUTTON_PIO_BASE 0x81170
 #define BUTTON_PIO_BIT_CLEARING_EDGE_REGISTER 0
 #define BUTTON_PIO_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define BUTTON_PIO_CAPTURE 1
@@ -395,7 +284,7 @@
  */
 
 #define ALT_MODULE_CLASS_cnc_module_0 cnc_module
-#define CNC_MODULE_0_BASE 0x82000
+#define CNC_MODULE_0_BASE 0x81000
 #define CNC_MODULE_0_IRQ -1
 #define CNC_MODULE_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define CNC_MODULE_0_NAME "/dev/cnc_module_0"
@@ -409,7 +298,7 @@
  */
 
 #define ALT_MODULE_CLASS_epcs_controller altera_avalon_epcs_flash_controller
-#define EPCS_CONTROLLER_BASE 0x81000
+#define EPCS_CONTROLLER_BASE 0x80800
 #define EPCS_CONTROLLER_IRQ 0
 #define EPCS_CONTROLLER_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define EPCS_CONTROLLER_NAME "/dev/epcs_controller"
@@ -434,7 +323,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart_0 altera_avalon_jtag_uart
-#define JTAG_UART_0_BASE 0x82208
+#define JTAG_UART_0_BASE 0x811d8
 #define JTAG_UART_0_IRQ 1
 #define JTAG_UART_0_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_0_NAME "/dev/jtag_uart_0"
@@ -452,7 +341,7 @@
  */
 
 #define ALT_MODULE_CLASS_lcd_16207_0 altera_avalon_lcd_16207
-#define LCD_16207_0_BASE 0x821d0
+#define LCD_16207_0_BASE 0x811a0
 #define LCD_16207_0_IRQ -1
 #define LCD_16207_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define LCD_16207_0_NAME "/dev/lcd_16207_0"
@@ -466,7 +355,7 @@
  */
 
 #define ALT_MODULE_CLASS_led_green altera_avalon_pio
-#define LED_GREEN_BASE 0x821b0
+#define LED_GREEN_BASE 0x81180
 #define LED_GREEN_BIT_CLEARING_EDGE_REGISTER 0
 #define LED_GREEN_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define LED_GREEN_CAPTURE 0
@@ -493,7 +382,7 @@
  */
 
 #define ALT_MODULE_CLASS_led_red altera_avalon_pio
-#define LED_RED_BASE 0x821c0
+#define LED_RED_BASE 0x81190
 #define LED_RED_BIT_CLEARING_EDGE_REGISTER 0
 #define LED_RED_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define LED_RED_CAPTURE 0
@@ -573,7 +462,7 @@
  */
 
 #define ALT_MODULE_CLASS_switch_pio altera_avalon_pio
-#define SWITCH_PIO_BASE 0x82190
+#define SWITCH_PIO_BASE 0x81160
 #define SWITCH_PIO_BIT_CLEARING_EDGE_REGISTER 0
 #define SWITCH_PIO_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define SWITCH_PIO_CAPTURE 0
@@ -600,13 +489,13 @@
  */
 
 #define ALT_MODULE_CLASS_sysid_qsys_0 altera_avalon_sysid_qsys
-#define SYSID_QSYS_0_BASE 0x821f0
+#define SYSID_QSYS_0_BASE 0x811c0
 #define SYSID_QSYS_0_ID 0
 #define SYSID_QSYS_0_IRQ -1
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1608772346
+#define SYSID_QSYS_0_TIMESTAMP 1620522839
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 
@@ -617,7 +506,7 @@
 
 #define ALT_MODULE_CLASS_timer_0 altera_avalon_timer
 #define TIMER_0_ALWAYS_RUN 0
-#define TIMER_0_BASE 0x82120
+#define TIMER_0_BASE 0x81120
 #define TIMER_0_COUNTER_SIZE 32
 #define TIMER_0_FIXED_PERIOD 0
 #define TIMER_0_FREQ 50000000
@@ -643,7 +532,7 @@
 
 #define ALT_MODULE_CLASS_timer_1 altera_avalon_timer
 #define TIMER_1_ALWAYS_RUN 0
-#define TIMER_1_BASE 0x82100
+#define TIMER_1_BASE 0x81100
 #define TIMER_1_COUNTER_SIZE 32
 #define TIMER_1_FIXED_PERIOD 0
 #define TIMER_1_FREQ 50000000
@@ -668,8 +557,8 @@
  */
 
 #define ALT_MODULE_CLASS_uart_0 altera_avalon_uart
-#define UART_0_BASE 0x82140
-#define UART_0_BAUD 115200
+#define UART_0_BASE 0x81140
+#define UART_0_BAUD 9600
 #define UART_0_DATA_BITS 8
 #define UART_0_FIXED_BAUD 1
 #define UART_0_FREQ 50000000

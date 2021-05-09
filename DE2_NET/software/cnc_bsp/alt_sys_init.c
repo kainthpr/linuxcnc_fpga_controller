@@ -2,9 +2,9 @@
  * alt_sys_init.c - HAL initialization source
  *
  * Machine generated for CPU 'cpu_0' in SOPC Builder design 'system_0'
- * SOPC Builder design path: C:/projects/DE2_NET/system_0.sopcinfo
+ * SOPC Builder design path: C:/projects/cnc/DE2_NET/system_0.sopcinfo
  *
- * Generated: Wed Sep 16 19:27:26 EDT 2020
+ * Generated: Sat May 08 11:33:17 EDT 2021
  */
 
 /*

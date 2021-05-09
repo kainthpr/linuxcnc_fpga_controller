@@ -1,9 +1,9 @@
 # memory.gdb - GDB memory region definitions
 #
 # Machine generated for CPU 'cpu_0' in SOPC Builder design 'system_0'
-# SOPC Builder design path: C:/projects/DE2_NET/system_0.sopcinfo
+# SOPC Builder design path: C:/projects/cnc/DE2_NET/system_0.sopcinfo
 #
-# Generated: Sun Sep 20 13:12:34 EDT 2020
+# Generated: Sat May 08 11:25:34 EDT 2021
 
 # DO NOT MODIFY THIS FILE
 #
@@ -50,7 +50,7 @@
 memory 0x0 0x80000 cache
 
 # epcs_controller
-memory 0x81000 0x81800 cache
+memory 0x80800 0x81000 cache
 
 # sdram_0
 memory 0x1000000 0x1800000 cache

@@ -2,9 +2,9 @@
  * linker.h - Linker script mapping information
  *
  * Machine generated for CPU 'cpu_0' in SOPC Builder design 'system_0'
- * SOPC Builder design path: C:/projects/DE2_NET/system_0.sopcinfo
+ * SOPC Builder design path: C:/projects/cnc/DE2_NET/system_0.sopcinfo
  *
- * Generated: Tue Sep 22 23:43:11 EDT 2020
+ * Generated: Sat May 08 11:25:34 EDT 2021
  */
 
 /*
@@ -67,9 +67,9 @@
 
 #define CFI_FLASH_0_REGION_BASE 0x1800000
 #define CFI_FLASH_0_REGION_SPAN 4194304
-#define EPCS_CONTROLLER_REGION_BASE 0x81020
+#define EPCS_CONTROLLER_REGION_BASE 0x80820
 #define EPCS_CONTROLLER_REGION_SPAN 2016
-#define RESET_REGION_BASE 0x81000
+#define RESET_REGION_BASE 0x80800
 #define RESET_REGION_SPAN 32
 #define SDRAM_0_REGION_BASE 0x1000000
 #define SDRAM_0_REGION_SPAN 8388608

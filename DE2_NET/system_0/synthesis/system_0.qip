@@ -2,7 +2,7 @@ set_global_assignment -entity "system_0" -library "system_0" -name IP_TOOL_NAME 
 set_global_assignment -entity "system_0" -library "system_0" -name IP_TOOL_VERSION "13.0sp1"
 set_global_assignment -entity "system_0" -library "system_0" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "system_0" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../system_0.sopcinfo"]
-set_instance_assignment -entity "system_0" -library "system_0" -name SLD_INFO "QSYS_NAME system_0 HAS_SOPCINFO 1 GENERATION_ID 1608772346"
+set_instance_assignment -entity "system_0" -library "system_0" -name SLD_INFO "QSYS_NAME system_0 HAS_SOPCINFO 1 GENERATION_ID 1620522839"
 set_global_assignment -library "system_0" -name MISC_FILE [file join $::quartus(qip_path) "../../system_0.cmp"]
 set_global_assignment -name SYNTHESIS_ONLY_QIP ON
 set_global_assignment -library "system_0" -name MISC_FILE [file join $::quartus(qip_path) "../../system_0.qsys"]
@@ -42,14 +42,6 @@ set_global_assignment -library "system_0" -name VERILOG_FILE [file join $::quart
 set_global_assignment -library "system_0" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/SEG7_LUT.v"]
 set_global_assignment -library "system_0" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/SEG7_LUT_8.v"]
 set_global_assignment -library "system_0" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/DM9000A_IF.v"]
-set_global_assignment -library "system_0" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/Img_DATA.hex"]
-set_global_assignment -library "system_0" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/VGA_Param.h"]
-set_global_assignment -library "system_0" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Img_RAM.v"]
-set_global_assignment -library "system_0" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/VGA_Controller.v"]
-set_global_assignment -library "system_0" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/VGA_NIOS_CTRL.v"]
-set_global_assignment -library "system_0" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/VGA_OSD_RAM.v"]
-set_global_assignment -library "system_0" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/AUDIO_DAC_FIFO.v"]
-set_global_assignment -library "system_0" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/FIFO_16_256.v"]
 set_global_assignment -library "system_0" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/system_0_sysid_qsys_0.v"]
 set_global_assignment -library "system_0" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/system_0_cfi_flash_0.v"]
 set_global_assignment -library "system_0" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_tristate_controller_aggregator.sv"]
@@ -70,8 +62,6 @@ set_global_assignment -library "system_0" -name SOURCE_FILE [file join $::quartu
 set_global_assignment -library "system_0" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/system_0_cpu_0_rf_ram_b.mif"]
 set_global_assignment -library "system_0" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/system_0_cpu_0_test_bench.v"]
 set_global_assignment -library "system_0" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ISP1362_IF.v"]
-set_global_assignment -library "system_0" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/system_0_SD_CLK.v"]
-set_global_assignment -library "system_0" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/system_0_SD_DAT.v"]
 set_global_assignment -library "system_0" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/system_0_switch_pio.v"]
 set_global_assignment -library "system_0" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/system_0_button_pio.v"]
 set_global_assignment -library "system_0" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/system_0_led_green.v"]
@@ -178,12 +168,6 @@ set_global_assignment -entity "system_0_tri_state_bridge_0_bridge_0" -library "s
 set_global_assignment -entity "system_0_cpu_0" -library "system_0" -name IP_TOOL_NAME "altera_nios2_qsys"
 set_global_assignment -entity "system_0_cpu_0" -library "system_0" -name IP_TOOL_VERSION "13.0"
 set_global_assignment -entity "system_0_cpu_0" -library "system_0" -name IP_TOOL_ENV "Qsys"
-set_global_assignment -entity "system_0_SD_CLK" -library "system_0" -name IP_TOOL_NAME "altera_avalon_pio"
-set_global_assignment -entity "system_0_SD_CLK" -library "system_0" -name IP_TOOL_VERSION "13.0.1.99.2"
-set_global_assignment -entity "system_0_SD_CLK" -library "system_0" -name IP_TOOL_ENV "Qsys"
-set_global_assignment -entity "system_0_SD_DAT" -library "system_0" -name IP_TOOL_NAME "altera_avalon_pio"
-set_global_assignment -entity "system_0_SD_DAT" -library "system_0" -name IP_TOOL_VERSION "13.0.1.99.2"
-set_global_assignment -entity "system_0_SD_DAT" -library "system_0" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "system_0_switch_pio" -library "system_0" -name IP_TOOL_NAME "altera_avalon_pio"
 set_global_assignment -entity "system_0_switch_pio" -library "system_0" -name IP_TOOL_VERSION "13.0.1.99.2"
 set_global_assignment -entity "system_0_switch_pio" -library "system_0" -name IP_TOOL_ENV "Qsys"

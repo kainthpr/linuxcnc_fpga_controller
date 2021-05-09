@@ -87,11 +87,11 @@ ACDS_VERSION := 13.0sp1
 
 # Quartus Generated JDI File. Required for resolving node instance ID's with 
 # design component names. 
-JDI_FILE := C:/projects/DE2_NET/DE2_NET.jdi
+JDI_FILE := C:/projects/cnc/DE2_NET/DE2_NET.jdi
 
 # Qsys--generated SOPCINFO file. Required for resolving node instance ID's with 
 # design component names. 
-SOPCINFO_FILE := C:/projects/DE2_NET/system_0.sopcinfo
+SOPCINFO_FILE := C:/projects/cnc/DE2_NET/system_0.sopcinfo
 
 # Big-Endian operation. 
 # setting BIG_ENDIAN is false
@@ -151,14 +151,14 @@ SOPC_SYSID_FLAG += --id=0
 ELF_PATCH_FLAG  += --id 0
 
 # The SOPC System ID Base Address 
-# setting SOPC_SYSID_BASE_ADDRESS is 0x821f0
-SOPC_SYSID_FLAG += --sidp=0x821f0
-ELF_PATCH_FLAG  += --sidp 0x821f0
+# setting SOPC_SYSID_BASE_ADDRESS is 0x811c0
+SOPC_SYSID_FLAG += --sidp=0x811c0
+ELF_PATCH_FLAG  += --sidp 0x811c0
 
 # The SOPC Timestamp 
-# setting SOPC_TIMESTAMP is 1608772346
-SOPC_SYSID_FLAG += --timestamp=1608772346
-ELF_PATCH_FLAG  += --timestamp 1608772346
+# setting SOPC_TIMESTAMP is 1620522839
+SOPC_SYSID_FLAG += --timestamp=1620522839
+ELF_PATCH_FLAG  += --timestamp 1620522839
 
 # Enable JTAG UART driver to recover when host is inactive causing buffer to 
 # full without returning error. Printf will not fail with this recovery. none 
@@ -339,13 +339,13 @@ ELF_PATCH_FLAG  += --stderr_dev jtag_uart_0
 
 # Slave descriptor of STDIN character-mode device. This setting is used by the 
 # ALT_STDIN family of defines in system.h. none 
-# setting hal.stdin is jtag_uart_0
-ELF_PATCH_FLAG  += --stdin_dev jtag_uart_0
+# setting hal.stdin is uart_0
+ELF_PATCH_FLAG  += --stdin_dev uart_0
 
 # Slave descriptor of STDOUT character-mode device. This setting is used by the 
 # ALT_STDOUT family of defines in system.h. none 
-# setting hal.stdout is jtag_uart_0
-ELF_PATCH_FLAG  += --stdout_dev jtag_uart_0
+# setting hal.stdout is uart_0
+ELF_PATCH_FLAG  += --stdout_dev uart_0
 
 
 #------------------------------------------------------------------------------
