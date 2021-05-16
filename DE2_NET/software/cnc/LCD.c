@@ -36,7 +36,7 @@ void LCD_Line2()
 //-------------------------------------------------------------------------
 void LCD_Test()
 {
-  char Text1[16] = "CNC v13         ";
+  char Text1[16] = "CNC v14         ";
   char Text2[16] = "LinuxCNC Testing";
   //  Initial LCD
   LCD_Init();

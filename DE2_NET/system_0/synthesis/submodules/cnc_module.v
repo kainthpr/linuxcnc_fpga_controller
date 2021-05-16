@@ -26,7 +26,7 @@ output	[4:0]	odirs;            // 5 axis dir outputs
 output  ospindle_pwm;             // spindle pwm
 output  cp;                       // charge pump
 output reg		[31:0]	ogpio;            // 32 general purpose outputs
-input   [31:0]	igpio;            // 32 general purpose inputs
+input   [31:0]	igpio;            // 32 general purpose inputs. 5/6 are also on encoder 0, 7/8 on encoder 1
 
 reg [31:0] sg0_per;
 reg [31:0] sg1_per;
@@ -40,6 +40,8 @@ reg pwm_en;
 reg [31:0] pwm_counter;
 reg [31:0] pwm_capture;
 reg [20:0] spare;
+
+reg [31:0] wd_counter;
 
 always@(posedge clk or negedge reset_n)
 begin
@@ -55,11 +57,11 @@ begin
         ogpio[31:0] <= 32'b0;
         pwm_counter <= 0;
         pwm_capture <= 0;
-    
-
+        wd_counter <= 0;
     end
     else begin
 		if(chipselect & write) begin
+            wd_counter <= wd_counter; // This is reset during read only 
             case (address)
                 6'h0: sg0_per[31:0] <= writedata; // stepgen0 rate
                 6'h1: sg1_per[31:0] <= writedata; // stepgen1 rate
@@ -77,7 +79,8 @@ begin
                 6'h8: ogpio[31:0] <= writedata[31:0];       // ogpio
             endcase
         end
-        else if(chipselect & read) begin
+        else if(chipselect & read) begin // regular register read. Also strokes the watchdog
+            wd_counter <= 0; // resetting watchdog
             case (address)
                 6'h0: readdata[31:0] <= sg0_per[31:0];  // stepgen0 rate
                 6'h1: readdata[31:0] <= sg1_per[31:0]; // stepgen1 rate
@@ -99,10 +102,13 @@ begin
                 6'hC: readdata[31:0] <= sg2_loc;       // sg2_loc
                 6'hD: readdata[31:0] <= sg3_loc;       // sg3_loc
                 6'hE: readdata[31:0] <= sg4_loc;       // sg4_loc
+                6'hF: readdata[31:0] <= enc0_count;       // enc0_count
+                6'h10: readdata[31:0] <= enc1_count;       // enc1_count
 
             endcase
         end
         else begin
+            wd_counter <= wd_counter + 1; // increment watchdog. This will be reset on a read request
             readdata[31:0] <= readdata[31:0];
             pwm_counter[31:0] <= pwm_counter[31:0];
             pwm_capture[31:0] <= pwm_capture[31:0];
@@ -203,13 +209,48 @@ pwm_gen pwm1
     .pwm_out(ospindle_pwm) 
 );
 
+
+reg [31:0] cp_capture;
+// watchdog biting. 50Million = 1 sec
+always @(posedge clk) begin
+    if (wd_counter > 50000000) begin
+        cp_capture = 32'hFFFFFFFF;
+    end
+    else begin
+        cp_capture = 32'd2500;
+    end
+end
+
+
+// CP generates clock while watchdog is happy
 pwm_gen cp1
 (
     .clk50(clk),
     .reset_n(reset_n),
     .pwm_counter(32'd5000),
-    .pwm_capture(32'd2500),
+    .pwm_capture(cp_capture),
     .pwm_out(cp) 
+);
+
+wire [31:0] enc0_count;
+wire [31:0] enc1_count;
+
+encoder_x1 enc0
+(
+    .clk50(clk),
+    .reset_n(reset_n),
+    .enc_a(igpio[5]),
+    .enc_b(igpio[6]),
+    .count(enc0_count)
+);
+
+encoder_x1 enc1
+(
+    .clk50(clk),
+    .reset_n(reset_n),
+    .enc_a(igpio[7]),
+    .enc_b(igpio[8]),
+    .count(enc1_count)
 );
 
 endmodule

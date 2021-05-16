@@ -44,14 +44,6 @@
          type = "String";
       }
    }
-   element SEG7_Display.avalon_slave_0
-   {
-      datum baseAddress
-      {
-         value = "528864";
-         type = "String";
-      }
-   }
    element DM9000A.avalon_slave_0
    {
       datum baseAddress
@@ -60,11 +52,11 @@
          type = "String";
       }
    }
-   element cnc_module_0.avalon_slave_0
+   element SEG7_Display.avalon_slave_0
    {
       datum baseAddress
       {
-         value = "528384";
+         value = "528864";
          type = "String";
       }
    }
@@ -78,6 +70,14 @@
       datum baseAddress
       {
          value = "0";
+         type = "String";
+      }
+   }
+   element cnc_module_0.avalon_slave_0
+   {
+      datum baseAddress
+      {
+         value = "528384";
          type = "String";
       }
    }
@@ -235,11 +235,40 @@
          type = "int";
       }
    }
+   element button_pio.s1
+   {
+      datum baseAddress
+      {
+         value = "528752";
+         type = "String";
+      }
+   }
+   element sdram_0.s1
+   {
+      datum _lockedAddress
+      {
+         value = "0";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "16777216";
+         type = "String";
+      }
+   }
    element switch_pio.s1
    {
       datum baseAddress
       {
          value = "528736";
+         type = "String";
+      }
+   }
+   element timer_0.s1
+   {
+      datum baseAddress
+      {
+         value = "528672";
          type = "String";
       }
    }
@@ -259,27 +288,6 @@
          type = "String";
       }
    }
-   element led_green.s1
-   {
-      datum baseAddress
-      {
-         value = "528768";
-         type = "String";
-      }
-   }
-   element sdram_0.s1
-   {
-      datum _lockedAddress
-      {
-         value = "0";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "16777216";
-         type = "String";
-      }
-   }
    element timer_1.s1
    {
       datum baseAddress
@@ -288,19 +296,11 @@
          type = "String";
       }
    }
-   element timer_0.s1
+   element led_green.s1
    {
       datum baseAddress
       {
-         value = "528672";
-         type = "String";
-      }
-   }
-   element button_pio.s1
-   {
-      datum baseAddress
-      {
-         value = "528752";
+         value = "528768";
          type = "String";
       }
    }
@@ -399,7 +399,7 @@
  <parameter name="projectName" value="DE2_NET.qpf" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
- <parameter name="timeStamp" value="1620485377278" />
+ <parameter name="timeStamp" value="1620601705744" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="clk_50_clk_in" internal="clk_50.clk_in" type="clock" dir="end">

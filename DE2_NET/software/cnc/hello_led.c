@@ -7,9 +7,10 @@
 
 unsigned int aaa, rx_len, i, packet_num;
 unsigned int temp;
+unsigned int seven_segs;
 volatile unsigned char RXT[512];
 unsigned int to_send = 0;
-volatile unsigned char TXT[40] = { 0x50, 0x46, 0x5d, 0x48, 0x37, 0x42, 0x01, 0x60,
+volatile unsigned char TXT[46] = { 0x50, 0x46, 0x5d, 0x48, 0x37, 0x42, 0x01, 0x60,
 		0x6E, 0x11, 0x02, 0x0F, 0x08, 0xab };
 volatile unsigned char igpio_31_24;  // inputs from pendant
 volatile unsigned char igpio_23_16;  // inputs from pendant
@@ -57,13 +58,13 @@ void ethernet_interrupts() {
 	{
 		aaa = ReceivePacket(RXT, &rx_len);
 		if (RXT[12] != 0x80 || RXT[13] != 0xab)
-		{ i++;
-//		outport(SEG7_DISPLAY_BASE, i);
-		TXT[13] = 0xaa;
-		TransmitPacket(TXT, 14);
-		TXT[13] = 0xab;
-		return;
-
+		{
+			i++;
+			seven_segs = (seven_segs & 0xFFFFFF00) | (i&0xFF); // lowest byte on seven segs show any ethernet garbage
+			TXT[13] = 0xaa;
+			TransmitPacket(TXT, 14);
+			TXT[13] = 0xab;
+			return;
 		}
 		// First return values regardless of what kind of request it is
 		temp = IORD(CNC_MODULE_0_BASE, 9);  // igpio
@@ -76,7 +77,6 @@ void ethernet_interrupts() {
 		TXT[17] = igpio_31_24;  // upper 8 bits from pendant
 
 		temp = IORD(CNC_MODULE_0_BASE, 10); // sg0_loc
-		//outport(SEG7_DISPLAY_BASE, i);
 
 		TXT[18] = temp&0xFF;
 		TXT[19] = (temp&0xFF00) >> 8;
@@ -107,7 +107,19 @@ void ethernet_interrupts() {
 		TXT[36] = (temp&0xFF0000) >> 16;
 		TXT[37] = (temp&0xFF000000) >> 24;
 
-		TransmitPacket(TXT, 38);
+		temp = IORD(CNC_MODULE_0_BASE, 15); // enc0_count
+		TXT[38] = temp&0xFF;
+		TXT[39] = (temp&0xFF00) >> 8;
+		TXT[40] = (temp&0xFF0000) >> 16;
+		TXT[41] = (temp&0xFF000000) >> 24;
+
+		temp = IORD(CNC_MODULE_0_BASE, 16); // enc1_count
+		TXT[42] = temp&0xFF;
+		TXT[43] = (temp&0xFF00) >> 8;
+		TXT[44] = (temp&0xFF0000) >> 16;
+		TXT[45] = (temp&0xFF000000) >> 24;
+
+		TransmitPacket(TXT, 46);
 
 		// write regs if this is correct
 		if (RXT[12] == 0x80 && RXT[13] == 0xab)
@@ -124,8 +136,7 @@ void ethernet_interrupts() {
 			IOWR(CNC_MODULE_0_BASE, 7, (RXT[45]<<24 | RXT[44]<<16 | RXT[43]<<8 | RXT[42])); // pwm compare
 			IOWR(CNC_MODULE_0_BASE, 8, (RXT[49]<<24 | RXT[48]<<16 | RXT[47]<<8 | RXT[46])); // ogpio
 
-			outport(LED_GREEN_BASE, (packet_num >> 7)&1);
-//			outport(LED_GREEN_BASE, IORD(CNC_MODULE_0_BASE, 7));
+			outport(LED_GREEN_BASE, (packet_num >> 7)&1); // this shows ethernet activity
 		}
 	}
 }
@@ -147,6 +158,7 @@ int main(void) {
 	LCD_Line2();
 	LCD_Show_Text(Texta);
 	volatile unsigned int count = 0;
+	unsigned char count_2;
 	unsigned char a;
 	unsigned char buffer;
 	int size;
@@ -155,8 +167,7 @@ int main(void) {
 		if (pendant_pressed == 1)
 		{
 			pendant_pressed = 0;
-			outport(LED_GREEN_BASE, ~(inport(LED_GREEN_BASE)));
-			outport(SEG7_DISPLAY_BASE, pendant_keys);
+			seven_segs = (seven_segs & 0xFF00FFFF) | ((pendant_keys << 16) & 0x00FF0000);  // 2nd last LSB on seven segs shows CPU activity
 
 			button = ((pendant_keys)>>4)&0x0F;
 			if (button <= 7)
@@ -171,12 +182,14 @@ int main(void) {
 				igpio_31_24 = (igpio_31_24 & temp_but) | ((pendant_keys&1) << button);
 			}
 
-//			IOWR_ALTERA_AVALON_UART_TXDATA(UART_0_BASE, (pendant_keys & 1) << button);
 		}
 
-		if ((count % 100000) == 0)
+		if ((count % 1000) == 0)
 		{
-			outport(LED_GREEN_BASE, ~(inport(LED_GREEN_BASE)));
+			count_2 = count_2 + 1;
+			seven_segs = (seven_segs & 0x00FFFFFF) | (TXT[38] << 24); // highest byte on seven segs shows pendant LSB
+			seven_segs = (seven_segs & 0xFFFF00FF) | ((count_2 << 8) & 0x0000FF00);  // 2nd last LSB on seven segs shows CPU activity
+			outport(SEG7_DISPLAY_BASE, seven_segs);
 		}
 
 		if (RXT[49] != old_pendant_leds) // send data if it has changed.

@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu_0' in SOPC Builder design 'system_0'
  * SOPC Builder design path: C:/projects/cnc/DE2_NET/system_0.sopcinfo
  *
- * Generated: Sat May 08 21:23:30 EDT 2021
+ * Generated: Sun May 09 20:38:32 EDT 2021
  */
 
 /*
@@ -495,7 +495,7 @@
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1620522839
+#define SYSID_QSYS_0_TIMESTAMP 1620606931
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 

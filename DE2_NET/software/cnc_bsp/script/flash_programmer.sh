@@ -13,7 +13,7 @@ sof2flash --input="C:/projects/cnc/DE2_NET/DE2_NET.sof" --output="../flash/DE2_N
 #
 # Programming File: "..\flash/DE2_NET_epcs_controller.flash" To Device: epcs_controller
 #
-nios2-flash-programmer "../flash/DE2_NET_epcs_controller.flash" --base=0x80800 --epcs --sidp=0x811C0 --id=0x0 --timestamp=1620522839 --device=1 --instance=0 '--cable=USB-Blaster on localhost [USB-0]' --program 
+nios2-flash-programmer "../flash/DE2_NET_epcs_controller.flash" --base=0x80800 --epcs --sidp=0x811C0 --id=0x0 --timestamp=1620606931 --device=1 --instance=0 --program 
 
 #
 # Converting ELF File: C:\projects\cnc\DE2_NET\software\cnc\cnc.elf to: "..\flash/cnc_epcs_controller.flash"
@@ -23,5 +23,5 @@ elf2flash --input="C:/projects/cnc/DE2_NET/software/cnc/cnc.elf" --output="../fl
 #
 # Programming File: "..\flash/cnc_epcs_controller.flash" To Device: epcs_controller
 #
-nios2-flash-programmer "../flash/cnc_epcs_controller.flash" --base=0x80800 --epcs --sidp=0x811C0 --id=0x0 --timestamp=1620522839 --device=1 --instance=0 '--cable=USB-Blaster on localhost [USB-0]' --program 
+nios2-flash-programmer "../flash/cnc_epcs_controller.flash" --base=0x80800 --epcs --sidp=0x811C0 --id=0x0 --timestamp=1620606931 --device=1 --instance=0 --program 
 
