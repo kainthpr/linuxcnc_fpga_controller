@@ -1,4 +1,4 @@
-# cnc
+# linuxcnc_fpga_controller
 DE2 Design for LinuxCNC controller + LinuxCNC component + LinuxCNC config 
 
 FPGA design:
